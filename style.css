@@ -1,0 +1,681 @@
+@font-face {
+    font-family: 'MWF-MDL2';
+    src: url(assets/fonts/mwfmdl2-v3.54.woff);
+}
+@font-face {
+    font-family: 'MWFFluentIcons';
+    src: url(assets/fonts/MWFFluentIcons.woff2);
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+button,div,span,p,h1,ul,li,ol,body{
+    padding: 0;
+    margin: 0;
+}
+/* body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.03rem;
+} */
+.flex{
+    display: flex;
+}
+
+/* -------------------------------------- */
+
+header{
+    margin-bottom: 34px;
+    min-width: 280px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #000;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-weight: 400;
+    overflow-x:visible ;
+}
+.header-container{
+    border-bottom: 1px solid #e6e6e6;
+    /* border-bottom: 1px solid black; */
+    height: 54px;
+    overflow-x: visible;
+}
+.header{
+    overflow-x: visible;
+    /* padding: 2px 0px; */
+    position: relative;
+    max-width: 1600px;
+    height: 100%;
+    /* border-bottom: 1px solid #e6e6e6; */
+    /* border-bottom: 1px solid black; */
+}
+.menu-button{
+    border: none;
+    background: transparent;
+    width: 48px;
+    height: 48px;
+    margin: 1px;
+    padding: 6px 0px 8px;
+}
+.menu-button::before{
+    font-size: 20px;
+    color: #000;
+    font-family: "MWF-MDL2";
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-top: 9px;
+    line-height: 15px;
+    vertical-align: baseline;
+    display: inline-block;
+}
+ .microsoftlogo-container{
+    padding: 12px 4px;
+    margin: 1px;
+    position:absolute;
+    left:calc(50% - 60px);
+    text-decoration: none;
+    overflow-x: visible;
+}
+.microsoftlogo-container img{
+    width: 108px;
+    height: auto;
+    vertical-align: middle;
+    margin-top: -3px;
+    border: 0;
+    overflow-x: visible;
+}
+.azure-stack-container{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 34px;
+    position: absolute;
+    left: 0;
+    right:0;
+    top:54px;
+    background:#fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+.azure-button-mobile{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: transparent;
+    border: 0;
+    color: #000000;
+    font-weight: 600;
+    height: 100%;
+    margin: 0px 1px;
+    padding: 0px 15px;
+    text-align: left;
+    overflow: visible;
+}
+.azure-button-mobile:after{
+    font-family: "MWF-MDL2";
+    content: "";
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 7px;
+    position: relative;
+    top:2px;
+}
+.header-navbar{
+    background: #f2f2f2;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    min-width: 320px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:34px;
+    display: none;
+}
+#toggle:checked  ~ .header-navbar {
+    display: block;
+}
+.header-nav-items{
+    height: 100%;
+    max-width: 100%;
+    list-style:none;
+}
+.header-nav-item{
+    text-align: left;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #e6e6e6;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+.header-nav-item a{
+    display: inline-block;
+    overflow-x: visible;
+    text-decoration: none;
+    color: #000;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 8px;
+}
+.nested-nav-item{
+    overflow-x: visible;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+.nested-nav-item button{
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+    background: transparent;
+    text-align: left;
+    overflow-x: visible;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.nested-nav-item-button:after{
+    font-family: "MWF-MDL2";
+    content: "";
+    font-size: 10px;
+    font-weight: 700;
+    padding-left: 7px;
+    padding-top: 7px;
+    position: absolute;
+    right: 20px;
+}
+.azure-logo-name-container{
+    display: none;
+}
+.sign-in-header-section{
+    flex: 1 0 auto;
+    justify-content: flex-start;
+}
+.sign-in-form{
+    position: relative;
+}
+.search-button{
+    height: 32px;
+    width: 34px;
+    line-height: 18px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    padding: 8px 8px 8px 0;
+    margin: 2px 2px 1px 1px;
+    margin-left: 2px;
+    margin-right: 6px;
+    position: absolute;
+    left: 1px;
+    top:8px;
+}
+.search-button:after{
+    font-family: "MWF-MDL2";
+    content: "";
+    font-size: 16px;
+    margin-left: 2px;
+    display: inline-block;
+    vertical-align: baseline;
+}
+.desktop-header-navbar-items{
+    display: none;
+}
+
+
+/* ------------------------------ */
+.section-1{
+    padding-bottom: 56px;
+    background: linear-gradient(90deg, #ede8f6 0%, #f4fafd 49.99%, #dceef8 100%);
+}
+.image-hidden-medium{
+    display: none;
+}
+.main-banner-image-container{
+    max-height: 100%;
+    overflow: hidden;
+}
+.main-banner-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: initial;
+    vertical-align: middle;
+}
+.main-banner-content-container{
+    background: linear-gradient(90deg, #ede8f6 0%, #f4fafd 49.99%, #dceef8 100%);
+    padding: 0 1rem;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+}
+.main-content-container{
+    flex-wrap: wrap;
+    margin: 0 -0.25rem;
+}
+.main-content{
+    flex-basis: 0px;
+    flex-grow: 1;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 0.25rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.AZURE{
+    color: #17253d;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1rem;
+    letter-spacing: 0.08em;
+}
+.main-banner-title h1{
+    color: #0e1726;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    letter-spacing: -0.05em;
+}
+.main-banner-description{
+    padding-right: 16px;
+    margin-top: 16px;
+    color: #17253d;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: -0.03em;
+}
+.main-banner-button-container{
+    margin-top: 24px;
+    
+}
+.main-banner-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* gap: 0.5rem; */
+}
+.main-banner-button a{
+    height: 51.2px;
+    text-decoration: none;
+    background-color: #0078d4;
+    color: #fff;
+    border: 2px solid transparent;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.02em;
+}
+
+@media screen and (min-width:540px){
+    .main-banner-content-container{
+        padding: 0 4rem;
+    }
+    .main-banner-button{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width:860px){
+
+    header{
+        margin-bottom: 2px;
+    }
+    .header-container{
+        border-bottom: unset;
+        font-size: 13px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .header{
+        margin: 0 auto;
+    }
+    .menu-button{
+        display: none;
+    }
+    .microsoftlogo-container{
+        position:unset;
+        padding: 16px 19px 16px 10px;
+        margin: 0px;
+        margin-top: 1px;
+        height: 100%;
+        width: 137px;
+        outline-offset: -2px;
+    }
+    .microsoftlogo-container img{
+        overflow-x: visible;
+        margin-top: -5px;
+        max-width: none;
+        width: 108px;
+        height: auto;
+        vertical-align: middle;
+        border: 0;
+        white-space: normal;
+    }
+    .azure-stack-container{
+        display: none;
+    }
+    .azure-logo-name-container{
+        display: unset;
+        position: relative;
+    }
+    .azure-logo-name{
+        padding: 16px 6px 16px 10px;
+        margin-top: 1px;
+        margin-left: 18px;
+        display: inline-block;
+        width: auto;
+        height: 100%;
+        white-space: nowrap;
+        outline-offset: -2px;
+        text-decoration: none;
+        background-color: transparent;
+        color: #262626;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        font-weight: 400;
+        font-size: 13px;
+        overflow-x: visible;
+    }
+    .azure-logo-name:before{
+        content: " ";
+        border-left: 2px solid #000;
+        height: 24px;
+        margin-left: 7px;
+        position: absolute;
+        top: 15px;
+        left: 0px;
+    }
+    .azure-text{
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: -3px;
+        white-space: nowrap;
+    }
+    .header-navbar{
+        display: initial;
+        overflow-x: visible;
+        overflow: hidden;
+        height: 100%;
+        white-space: nowrap;
+        padding-left: 2px;
+        padding-right: 1px;
+        flex: 1 1 auto;
+        position: unset;
+        background: #fff;
+        border-bottom: unset;
+    }
+    .header-nav-items{
+        max-width: unset;
+    }
+    .header-nav-item{
+        display: inline-block;
+        max-width: unset;
+        width: unset;
+        text-align: left;
+        border-top: unset;
+        border-bottom: unset;
+    }
+
+    .header-nav-items .header-nav-item:last-child{
+        display: none;
+    }
+
+
+    /* errorrrrrrrrrrrrrrrrrr */
+    .nested-nav-item button{
+        white-space: nowrap;
+        color: #262626;
+        margin-right: -10px;
+        border: 1px solid transparent;
+        margin-top: 1px;
+        padding: 16px 30px 16px 12px;
+        overflow: visible;
+        height: unset;
+        font-size: 13px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .nested-nav-item-button:after{
+        font-size: 8px;
+        color: currentColor;
+        padding-left: 0px;
+        display: inline-block;
+        right: 15px;
+    }
+    /* errorrrrrrrrrrrrrrrrrr */
+
+
+    
+    .sign-in-header-section{
+        flex:none;
+        justify-content: flex-end;
+    }
+    .sign-in-form{
+        margin-top: 3px;
+        max-width: 100%;
+        width: auto;
+        min-width: 45px;
+        height: 38px;
+    }
+    .search-button{
+        width: auto;
+        margin: 2px 2px 1px 1px;
+        margin-top: 0px;
+        margin-left: 6px;
+        margin-right: 6px;
+        padding: 9px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        right: 0;
+        left: -3px;
+        top:0;
+    }
+    .search-button:after{
+        text-indent: 0;
+        vertical-align: sub;
+        line-height: 18px;
+        margin-top: 1px;
+    }
+    .desktop-header-navbar{
+        overflow: hidden;
+        height: 100%;
+        white-space: nowrap;
+        padding-left: 2px;
+        padding-right: 1px;
+    }
+
+
+    /* ------------------------- */
+    .image-hidden-small{
+        display: none;
+    }
+    .image-hidden-medium{
+        display: initial;
+    }
+
+    .main-banner-image-container{
+        height: 100%;
+        min-height: 628px;
+        position: relative;
+    }
+    .image-hidden-medium{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .section-1{
+        position: relative;
+        padding-bottom: unset;
+    }
+    .main-banner-content-container{
+        /* margin: unset; */
+        background:unset;
+        position:absolute;
+        top:0;
+        left: 0;
+        padding: 96px 3.5rem;
+        max-width: 100vw;
+    }
+    .main-content-container{
+        margin: 0 -0.5rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .main-content{
+        padding-left: 0.5rem;
+        padding-right: unset;
+        margin-top: 6px;
+        flex-basis: unset;
+        flex-grow: unset;
+        width: calc(calc(100% - calc(1rem * (2 - 1))) / 2);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .AZURE{
+        margin-bottom: 16px;
+    }
+    .main-banner-title h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .main-banner-description{
+        margin-top: 24px;
+        padding-right: 48px;
+    }
+    .main-banner-button-container{
+        margin-top: 32px;
+    }
+    .main-banner-button a {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+}
+
+
+
+@media screen and (min-width:951px){
+    .main-content{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width:961px){
+    .main-content{
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+}
+@media screen and (min-width:1197px){
+    .main-content{
+        margin-top: 58px;
+        margin-bottom: 58px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1083px){
+        .header-container{
+            padding: 0 5%;
+        }
+}
+
+@media screen and (min-width:1084px){
+    .header-nav-items .header-nav-item:last-child{
+        display: inline-block;
+        
+    }
+    .header-nav-items .header-nav-item:nth-child(n+2):nth-child(-n+6){
+        display: none;
+    }
+    .desktop-header-navbar-items{
+        display: initial;
+        list-style: none;
+    }
+    .desktop-header-navbar-item{
+        display: inline-block;
+    }
+    .navbar-item-link{
+        text-decoration: none;
+        color: #262626;
+        border: 1px solid transparent;
+        margin-top: 1px;
+        padding: 16px 8px 10px;
+        height: 48px;
+        display: inline-block;
+    }
+    .navbar-item-button{
+        text-decoration: none;
+        background-color: #0078d4;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        color: #ffffff;
+        height: 31px;
+        margin: 1px 8px ;
+        margin-top: 11px;
+        padding: 16px 8px 10px;
+        padding-top: 4px;
+        line-height: 1.5;
+        font-weight: 400;
+        font-size: 13px;
+        white-space: normal;
+        letter-spacing: normal;
+        display: inline-block;
+    }
+    .desktop-header-navbar-items .desktop-header-navbar-item:last-child a{
+        border: 1px solid #000000;
+        background-color: transparent;
+        color: #262626;
+    }
+}
+
+
+
+
+
+
+
