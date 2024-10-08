@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Computing Services | Microsoft Azure</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement( "picture" );
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/scottjehl/picturefill@3.0.2/dist/picturefill.js" async></script>
 </head>
 <body>
     <header>
@@ -179,20 +184,21 @@
                             </li>
                         </ul>
                     </nav>
-
-
-
-                    
                 </div>
             </div>
         </div>
     </header>
-    <!-- ------------------------------------- -->
+    <!-- -------------------main-section-1----------------------- -->
     <main>
         <div class="section-1"> 
             <div class="main-banner-image-container">
-                <img class="image-hidden-small" src="assets/images/azure-main.avif" alt="">
-                <img class="image-hidden-medium" src="assets/images/azure-main-860.avif" alt="">
+                <picture>
+                    <source srcset="assets/images/azure-main-1400.avif" media="(min-width:1400px)">
+                    <source srcset="assets/images/azure-main-1084.avif" media="(min-width:1084px)">
+                    <source srcset="assets/images/azure-main-860.avif" media="(min-width:860px)">
+                    <source srcset="assets/images/azure-main-540.avif" media="(min-width:540px)">
+                    <img  class="main-image" src="assets/images/azure-main.avif" alt="pic">
+                </picture>
             </div>
             <div class="main-banner-content-container">
                 <div class="main-content-container flex">
@@ -215,6 +221,165 @@
                 </div>
             </div>
         </div>
+
+        <!-- ---------------- sticky header navbar ------------------ -->
+        <div class="sticky-navbar-container">
+            <nav class="sticky-nav flex">
+                <div class="dropdown flex">
+                    <a href="#"> Featured news </a>
+                    <span class="down-arrow"></span>
+                </div>
+                <div class="nav-item-indicator"></div>
+            </nav>
+        </div>
+        <!-- ------------------- section-2 --------------------------- -->
+        <section>
+            <div class="section-2">
+                <div class="section-2-image-container">
+                    <picture>
+                        <source srcset="assets/images/section1-bg-1400.avif" media="(min-width:1400px)">
+                        <source srcset="assets/images/section1-bg-1084.avif" media="(min-width:1084px)">
+                        <source srcset="assets/images/section1-bg-860.avif" media="(min-width:860px)">
+                        <source srcset="assets/images/section1-bg-540.avif" media="(min-width:540px)">
+                        <img  class="main-image" src="assets/images/section1-bg.avif" alt="pic">
+                    </picture>
+                    <div class="section-2-content-container">
+                        <div class="section-head flex">
+                            <div class="section-head-container">
+                                <div class="section-title">
+                                    featured news
+                                </div>
+                                <div class="section-heading">
+                                    <h2 class="heading">Discover what's happening on Azure</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section2-content flex">
+                            <div class="card flex">
+                                <div class="card-image-container">
+                                    <picture>
+                                        <source srcset="assets/images/card1-img-1400.avif" media="(min-width:1400px)">
+                                        <source srcset="assets/images/card1-img-1084.avif" media="(min-width:1084px)">
+                                        <source srcset="assets/images/card1-img-860.avif" media="(min-width:860px)">
+                                        <source srcset="assets/images/card1-img-540.avif" media="(min-width:540px)">
+                                        <img  class="card-image" src="assets/images/card1-img.avif" alt="pic">
+                                    </picture>
+                                </div>
+                                <div class="card-content-container flex">
+                                    <div class="card-description-container flex">
+                                        <p class="card-title">Innovate with AI responsibly and securely</p>
+                                        <p class="card-description">Secure your data and build AI apps confidently with responsible AI tools and the latest security and privacy features.</p>
+                                    </div>
+                                    <div class="card-button-container flex">
+                                        <a class="card-button-wrapper flex " href="#">
+                                            <span class="card-button"></span>
+                                            <span class="card-link">Explore responsible AI</span>
+                                        </a>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="card flex">
+                                <div class="card-image-container">
+                                    <img class="card-image" src="assets/images/card2-img.avif" alt="pic">
+                                    <!-- <picture>
+                                        <source srcset="assets/images/card1-img-1400.avif" media="(min-width:1400px)">
+                                        <source srcset="assets/images/card1-img-1084.avif" media="(min-width:1084px)">
+                                        <source srcset="assets/images/card1-img-860.avif" media="(min-width:860px)">
+                                        <source srcset="assets/images/card1-img-540.avif" media="(min-width:540px)">
+                                    </picture> -->
+                                </div>
+                                <div class="card-content-container flex">
+                                    <div class="card-description-container flex">
+                                        <p class="card-title">Build on a trusted platform</p>
+                                        <p class="card-description">Create next-gen AI solutions with a responsible platform dedicated to security, reliability, and sustainability.</p>
+                                    </div>
+                                    <div class="card-button-container flex">
+                                        <a class="card-button-wrapper flex " href="#">
+                                            <span class="card-button"></span>
+                                            <span class="card-link">Learn more</span>
+                                        </a>
+                                    </div>  
+                                </div>
+                            </div>
+                            <!-- <div class="card flex">
+                                <div class="card-image-container">
+                                    <picture>
+                                        <source srcset="assets/images/card3-img-1400.avif" media="(min-width:1400px)">
+                                        <source srcset="assets/images/card3-img-1084.avif" media="(min-width:1084px)">
+                                        <source srcset="assets/images/card3-img-860.avif" media="(min-width:860px)">
+                                        <source srcset="assets/images/card3-img-540.avif" media="(min-width:540px)">
+                                        <img  class="card-image" src="assets/images/card3-img.avif" alt="pic">
+                                    </picture>
+                                </div>
+                                <div class="card-content-container flex">
+                                    <div class="card-description-container flex">
+                                        <p class="card-title">Get ready for Microsoft Ignite</p>
+                                        <p class="card-description">Join us November 18–22, 2024 to explore the latest innovations, learn from experts, level up your skillset, and expand your network.</p>
+                                    </div>
+                                    <div class="card-button-container flex">
+                                        <a class="card-button-wrapper flex " href="#">
+                                            <span class="card-button"></span>
+                                            <span class="card-link">Register now</span>
+                                        </a>
+                                    </div>  
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------------section-3 ------------------------- -->
+        <section>
+            <div class="section-3">
+                <div class="section-3-content-container">
+                    <div class="section1-head flex">
+                        <div class="section1-head-container">
+                            <div class="section-title">
+                                solutions
+                            </div>
+                            <div class="section-heading">
+                                <h2 class="heading" >Find solutions for putting your ideas into action</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
 
 </body>
