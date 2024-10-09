@@ -375,16 +375,16 @@ header{
     background-color: #004275;
 }
 /* -------------------section-2---------------- */
-.section-2{
+/* .section-2{
     background-color: rgba(255,255,255,0.6);
-}
-.section-2-image-container{
+} */
+/* .section-2-image-container{
     position: relative;
     max-width: 100%;
     width: 100%;
     height: 100%;
-}
-.main-image{
+} */
+/* .main-image{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -392,17 +392,20 @@ header{
     overflow-x: clip;
     overflow-y: clip;
     overflow-clip-margin: content-box;
-}
+} */
+
+
 .section-2-content-container{
+    background-image: url(assets/images/section1-bg.avif);
     padding: 56px 16px;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    position: absolute;
+    /* position: absolute;
     top:0;
     right: 0;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
 }
 .section-head{
     flex-wrap: wrap;
@@ -452,6 +455,7 @@ header{
     padding-right: 8px;
 }
 .card-image{
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -531,6 +535,445 @@ header{
     line-height: 1.25rem;
 }
 
+/* ----------------- section-3 ---------------------- */
+.section-3{
+    background-color: rgb(244, 250, 253);
+}
+.section-3-content-container{
+    padding: 56px 16px;
+}
+.section-3-content-container .section-head{
+    padding-bottom: 0.5rem;
+}
+.section-scrollbar-container{
+    position: relative;
+}
+.section-scrollbar{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    /* position: relative; */
+}
+.section-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+.section-content{
+    margin-top: 24px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.scroll-button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 12.5rem;
+    background-color: rgba(0,85,151,0.1);
+    color: #004275;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-right: 8px;
+    padding: 8px 16px;
+    flex: 0 0 auto;
+}
+.scroll-button-text{
+    padding-bottom: 2px;
+    font-weight: 600;
+    font-size: .9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -.02em;
+}
+.section-scrollbar .scroll-button:first-child{
+    background-color: #005597;
+    color: #fff;
+}
+.right-button-container{
+    position: absolute;
+    right: -.25rem;
+    top: 0;
+    width: 20vw;
+    height: 100%;
+    background: linear-gradient(270deg, rgb(244, 250, 253) 25%, rgba(242, 242, 242, 0) 100%);
+}
+.right-button{
+    background: linear-gradient(270deg, rgb(244, 250, 253) 25%, rgba(242, 242, 242, 0) 100%);
+    border: 2px solid #004275;
+    border-radius: 12.5rem;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    right: -.25rem;
+    top: 0;
+}
+.right-button::before{
+    font-family:'MWFFluentIcons';
+    content: "";
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #004275;
+}
+.section-list-container{
+    margin-top: 24px;
+}
+.section-list{
+    list-style-type: none;
+}
+.section-list-item{
+    background:transparent;
+}
+.selected-button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: rgb(244, 250, 253);
+    text-align: left;
+    padding-bottom: 24px;
+    width: 100%;
+}
+.selected-button:after{
+    font-family:'MWFFluentIcons';
+    content: "";
+    font-size: 1em;
+    line-height: 1.5625rem;
+}
+.section-list .section-list-item:nth-child(n+2):nth-child(-n+5) .selected-button{
+    padding-top: 24px;
+} 
+.section-list .section-list-item:nth-child(n+2):nth-child(-n+5){
+    border-bottom: 1px solid rgb(189,197,210);
+}
+.list-text{
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+.selected-item-content{
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 24px;
+}
+.selected-item-description{
+    color: #17253d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: -0.48px;
+}
+.selected-item-link{
+    /* margin-bottom: 24px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.48px;
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+    color: #004275;
+}
+.selected-item-link-text{
+    padding-bottom: 2px;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.48px;
+}
+
+
+.selected-item-image-container{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    position: relative;
+}
+.selected-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    display: block;
+}
+.play-button-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+}
+.play-button{
+    background-color: #0078d4;
+    padding: 14px;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    color: #ffff;
+    text-decoration: none;
+    /* align-items: center;
+    justify-content: center; */
+    position: absolute;
+}
+.play-icon:before{
+    font-family:'MWFFluentIcons';
+    content: "";
+    font-weight: 400;
+    line-height: 1;
+}
+.section-content .card-button-container{
+    margin-top: 24px;
+}
+
+/* ------------------ section-4 ---------------- */
+.section-4{
+    background-image: url(assets/images/section-4-bg.avif);
+    background-repeat: no-repeat;
+}
+.section-4-content-container{
+    padding: 56px 16px;
+}
+.section-4 .section-content{
+    margin-top: 32px;
+}
+.section-4-cards-container{
+    margin-top: 32px;
+    flex-direction: column;
+    gap: 12px;
+}
+.large-card{
+    display: grid;
+    box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+    height: 387.2px;
+    width: 100%;
+    border-radius: 1rem;
+    position: relative;
+}
+.large-card::before{
+    content: "";
+    background: linear-gradient(rgba(244, 250, 253, 0) 0%, rgb(244, 250, 253) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.large-card-image-container{
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+}
+.large-card-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    aspect-ratio: 21/9;
+    display: block;
+}
+.large-card-content{
+    width: 100%;
+    padding: 16px;
+    position:absolute;
+    bottom: 1px;
+    flex-direction: column;
+    gap: 12px;
+}
+.large-card-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.05em;
+    padding-top: 4px;
+}
+.large-card-subtitle{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    color: #17253d;
+}
+.large-card-content .main-banner-button-container{
+    margin-top: unset;
+}
+.small-cards-container{
+    flex-direction: column;
+    gap: 12px;
+}
+.small-card{
+    background-color: #fefefe;
+    box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+    border-radius: 1rem;
+}
+.small-card-content{
+    padding: 16px;
+    flex-direction: column;
+}
+.card-head{
+    flex-direction: column;
+    gap: 12px;
+}
+.card-icon-container{
+    width: 3rem;
+    height: 3rem;
+    background-color: #fefefe;
+    border: 0.8px solid #e6f2fb;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.card-logo{
+    width: 24px;
+    height: 24px;
+}
+.small-card-title{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    color: #0e1726;
+}
+.small-card-subtitle{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    color: #17253d;
+}
+.small-card-link-container{
+    margin-top: 32px;
+    justify-content: flex-start;
+    line-height: 24px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+}
+.small-card-link{
+    text-decoration: underline;
+    color: #004275;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.48px;
+    font-weight: 600;
+    text-align: left;
+    text-underline-offset: 2px;
+    align-items: center;
+}
+.small-card-link-text{
+    padding-bottom: 2px;
+}
+.section-4 .card-button-container{
+    margin-top: 32px;
+}
+/* -----------------section-5----------------- */
+
+.section-5-content{
+    padding: 48px 16px;
+    position: relative;
+}
+.section-5-image-container{
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    transform: unset;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    /* position: relative; */
+
+}
+.section-5 .section-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.section-5-image-container picture{
+    object-fit: fill;
+    max-width: 100%;
+    aspect-ratio: auto;
+}
+.section-5-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.section-5 .card-image-container{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.section-5 .card-title{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -0.05em;
+    padding-top: 8px;
+}
+.section-5 .card-description{
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.03em;
+    color: #17253d;
+}
+.section-5 .main-banner-button-container{
+    margin-top: unset;
+}
+.section-5 .card-content-container{
+    justify-content: space-around;
+}
+
+
+/* -----------------section-6---------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -559,12 +1002,6 @@ header{
         justify-content: flex-start;
     }
 }
-
-
-
-
-
-
 @media screen and (min-width:860px){
 
     header{
