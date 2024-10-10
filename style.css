@@ -314,7 +314,6 @@ header{
     /* gap: 0.5rem; */
 }
 .main-banner-button a{
-    height: 51.2px;
     text-decoration: none;
     background-color: #0078d4;
     color: #fff;
@@ -326,6 +325,15 @@ header{
     line-height: 1.375rem;
     letter-spacing: -0.02em;
 }
+.main-button-text{
+    padding-bottom: 2px;
+    display: block;
+    text-align: center;
+}
+
+
+
+
 /* ------------sticky header navbar------------ */
 
 .sticky-navbar-container{
@@ -397,6 +405,9 @@ header{
 
 .section-2-content-container{
     background-image: url(assets/images/section1-bg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 56px 16px;
     width: 100%;
     margin-right: auto;
@@ -533,6 +544,7 @@ header{
     font-size: .875rem;
     font-weight: 600;
     line-height: 1.25rem;
+    letter-spacing: -0.48px;
 }
 
 /* ----------------- section-3 ---------------------- */
@@ -728,6 +740,8 @@ header{
 .section-4{
     background-image: url(assets/images/section-4-bg.avif);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .section-4-content-container{
     padding: 56px 16px;
@@ -869,10 +883,15 @@ header{
     margin-top: 32px;
 }
 /* -----------------section-5----------------- */
-
+.section-5{
+    background-image: url(assets/images/section-5-bg.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .section-5-content{
     padding: 48px 16px;
-    position: relative;
+    /* position: relative; */
 }
 .section-5-image-container{
     /* position: absolute;
@@ -886,14 +905,13 @@ header{
     overflow: hidden;
     display: block;
     /* position: relative; */
-
 }
 .section-5 .section-content{
-    position: absolute;
+    /* position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 0; */
 }
 .section-5-image-container picture{
     object-fit: fill;
@@ -930,9 +948,362 @@ header{
 .section-5 .card-content-container{
     justify-content: space-around;
 }
-
-
 /* -----------------section-6---------------- */
+/* .section-6{
+    background-image: url(assets/images/section-6-bg-image.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+
+.section-6-content-container{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.section-6 .section-head{
+    padding-top: 48px;
+    margin-bottom: 24px;
+    text-align: center
+}
+.section-6 .heading{
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.05rem;
+}
+.section-6-main{
+    background-image: url(assets/images/section-6-bg-image.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-6 .section-scrollbar-container{
+    position: unset;
+}
+.section-6 .section-scrollbar{
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.section-6 .scroll-button{
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    background-color: #fefefe;
+    color: #0e1726;
+    border: 1px solid #bdc5d2;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 1.008px 2px 0px;
+    border-radius: unset;
+    margin-right: unset;
+    width: 220.33px;
+}  
+.scroll-button-container{
+    border-bottom-left-radius: 0.5rem;
+    position: relative;
+} 
+.section-6 .scroll-button:first-child{
+    border-top-left-radius: 0.5rem;
+    /* border-bottom-left-radius: 0.5rem; */
+    background-color: #fefefe;
+    color: #0e1726;
+}
+.section-6 .scroll-button-text{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    padding-bottom: unset;
+    display: flex;
+    align-items: center;
+}
+.scrollbar-indicator{
+    border-bottom-left-radius: 0.5rem;
+    background-color: #004275;
+    width: 100%;
+    height: 0.25rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.section-6 .scroll-button:last-child{
+    border-right: none;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.arrow-button-container{
+    margin-top: 24px;
+    padding-bottom: 40px;
+    position: relative;
+}
+.mobile-arrow-button{
+    background: linear-gradient(270deg, rgb(244, 250, 253) 25%, rgba(242, 242, 242, 0) 100%);
+    border: 2px solid #004275;
+    border-radius: 12.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-arrow-button::before{
+    font-family:'MWFFluentIcons';
+    content: "";
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #004275;
+}
+.mobile-arrow-button-right::before{
+    font-family:'MWFFluentIcons';
+    content: "";
+}
+.mobile-arrow-button:first-child{
+    opacity: 0.2;
+    position: absolute;
+    left: -4px;
+    top: 2px;
+}
+.mobile-arrow-button:last-child{
+    position: absolute;
+    left: 48px;
+    right: -4px;
+    top: 2px;
+}
+.section-6 .section-content{
+    margin-top: unset;
+    padding-left: unset;
+    padding-right: unset;
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+.section-6-description-section{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    text-align: center;
+}
+.section-6-description{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    letter-spacing: -0.05em;
+    color: #0e1726;
+    padding-top: 4px;
+}
+.section-6 .card-button-container{
+    margin-top: unset;
+}
+.section-6-image-section{
+    margin-top: 24px;
+    padding: 16px;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.section-6-image-container{
+    width: 100%;
+    max-width: 100%;
+    background-color:rgba(255,255,255,0.1) ;
+    backdrop-filter: blur(80px);
+}
+.section-6-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1.77778/1;
+    border-radius: 8px;
+    /* object-fit: fill; */
+    display: block;
+}
+/* ---------------- section-7 ------------------ */
+.section-7{
+    background-image: url(assets/images/section-7-globe-image.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-7 .main-banner-content-container{
+    background: unset;
+    margin-bottom: unset;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.section-7 .main-content{
+    margin-top: unset;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.section-7 .main-banner-title h1{
+    color: #fafafd;
+}
+.section-7 .main-banner-description{
+    padding-left: 16px;
+    color: #DCEEF8;
+}
+.section-7 .main-banner-button a{
+    background-color: #b3daf0;
+}
+.section-7 .main-button-text{
+    padding-bottom: 2px;
+    display: block;
+    text-align: center;
+    color: #0e1726;
+}
+/* ---------------------- section-8---------------- */
+.section-8{
+    background-image: url(assets/images/section-8-bg-image.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section-8-content-container{
+    padding: 56px 16px;
+}
+.section-8 .section-head{
+    padding-bottom: 0.5rem;
+}
+.carousels-container{
+    margin-bottom: 65px;
+}
+.carousel-container{
+    padding: 3px;
+}
+.carousel{
+    flex-direction: column;
+    background-color:#fefefe;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 2px 4px 0px;
+    border-radius: 1rem;
+}
+.carousel-image-container{
+    padding: 8px 8px 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.carousel-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.5rem;
+}
+.carousel-content-container{
+    padding: 16px;
+    flex-direction: column;
+    gap: 24px;
+}
+.carousel-logo-section{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.carousel-logo-container{
+    border: 0.8px solid #bdc5d2;
+    border-radius: 0.5rem;
+}
+.carousel-logo{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 0.5rem;
+    display: block;
+}
+.carousel-description{
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.05em;
+    color: #17253d;
+}
+.carousel-links-section{
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+.carousel-product-link-section{
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.card-link-title{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    color: #0e1726;
+}
+.card-links{
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+.card-link{
+    gap: 0.5rem;
+    white-space: nowrap;
+    /* line-height: 24px; */
+}
+.card-link-icon{
+    width: 20px;
+    height: 20px;
+    font-size: 1.25rem;
+}
+.card-link-text{
+    color: #0067b8;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.48px;
+}
+
+/* -------------------section-9------------------ */
+.section-9{
+    background-image: url(assets/images/section-9-bg-image.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-9-content-container{
+    padding: 56px 16px;
+}
+.section-9 .section-content{
+    margin-top: 32px;
+}
+.section-9 .section-head{
+    text-align: center;
+}
+.section-9 .heading{
+    font-size: 28px;
+    letter-spacing: -1.4px;
+    line-height: 36px;
+}
+.section-9 .small-cards-container{
+    gap: 8px;
+}
+.section-9 .small-card-title{
+    font-size: 18px;
+    letter-spacing: -0.54px;
+}
+.section-9 .card-button-container{
+    margin-top: 32px;
+}
+/* -------------------------section-10------------------------ */
+
+
+
+
+
+
+
+
+
+
 
 
 
