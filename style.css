@@ -6,14 +6,12 @@
     font-family: 'MWFFluentIcons';
     src: url(assets/fonts/MWFFluentIcons.woff2);
 }
-
 html{
     box-sizing: border-box;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 button,div,span,p,h1,h2,h3,h4,h5,h6,ul,li,ol,body{
     padding: 0;
     margin: 0;
@@ -237,12 +235,12 @@ header{
 .desktop-header-navbar-items{
     display: none;
 }
-
-
 /* ------------ section-1 ----------------- */
+
 .section-1{
     padding-bottom: 56px;
-    background: linear-gradient(90deg, #ede8f6 0%, #f4fafd 49.99%, #dceef8 100%);
+    background-color: #17253d;
+    /* background: linear-gradient(90deg, #ede8f6 0%, #f4fafd 49.99%, #dceef8 100%); */
 }
 .main-banner-image-container{
     max-height: 100%;
@@ -252,9 +250,12 @@ header{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 .main-banner-content-container{
-    background: linear-gradient(90deg, #ede8f6 0%, #f4fafd 49.99%, #dceef8 100%);
+    /* background: linear-gradient(90deg, #ede8f6 0%, #f4fafd 49.99%, #dceef8 100%); */
+    background-color: #17253d;
+    /* background:linear-gradient(180deg, rgba(4, 13, 18, 0) 0%, rgba(4, 13, 18, 0.8) 93.59%); */
     padding: 0 1rem;
     margin-bottom: 32px;
     margin-left: auto;
@@ -276,7 +277,7 @@ header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .AZURE{
-    color: #17253d;
+    color: #b3daf0;
     margin-bottom: 12px;
     font-size: 0.75rem;
     font-weight: 600;
@@ -284,7 +285,7 @@ header{
     letter-spacing: 0.08em;
 }
 .main-banner-title h1{
-    color: #0e1726;
+    color: #faf4fd;
     font-size: 2rem;
     font-weight: 600;
     line-height: 2.5rem;
@@ -293,14 +294,21 @@ header{
 .main-banner-description{
     padding-right: 16px;
     margin-top: 16px;
-    color: #17253d;
+    color: #dceef8;
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.75rem;
     letter-spacing: -0.03em;
 }
+.main-button-wrapper{
+    flex-direction: column;
+    gap: 0.5rem;
+}
 .main-banner-button-container{
     margin-top: 24px;
+}
+.main-banner-button-container:nth-child(2){
+    margin-top: unset;
 }
 .main-banner-button{
     display: flex;
@@ -311,8 +319,8 @@ header{
 }
 .main-banner-button a{
     text-decoration: none;
-    background-color: #0078d4;
-    color: #fff;
+    background-color: #B3DAF0;
+    color: #0e1726;
     border: 2px solid transparent;
     padding: 12px;
     border-radius: 8px;
@@ -321,14 +329,16 @@ header{
     line-height: 1.375rem;
     letter-spacing: -0.02em;
 }
+.main-banner-button-container:nth-child(2) a{
+    background-color: transparent;
+    border-color: #8dc8e8;
+    color: #faf4fd;
+}
 .main-button-text{
     padding-bottom: 2px;
     display: block;
     text-align: center;
 }
-
-
-
 
 /* ------------sticky header navbar------------ */
 
@@ -343,35 +353,61 @@ header{
     z-index: 100;
 }
 .sticky-nav{
-    flex-grow: 1;
     flex-direction: column;
-    align-items: center;
+}
+.dropdown-container{
+    flex-grow: 1;
+    margin: 4px;
 }
 .dropdown{
-    margin: 0.25rem;
     align-items: center;
     gap:0.5rem;
     padding: 12px;
-    padding-top: 13.5px;
-    padding-bottom: 13.5px;
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #004275;
+    
 }
-.dropdown a{
+/* .dropdown a{
     text-decoration: none;
     flex-grow: 1;
     font-size: 0.875rem;
     font-weight: 600;
     line-height: 1.25rem;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.48px;
     color: #004275;
+} */
+/* .dropdown-item-label{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+.dropdown-item-label {
+    /* text-decoration: none; */
+    /* color: #004275; */
+    flex-grow: 1;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    letter-spacing: -0.48px;
+    width: 100%;
+
+}
+.down-arrow{
+    align-items: center;
+    height: 100%;
+    font-size: 1rem;
+    line-height: 24px;
+    
 }
 .down-arrow:before{
     font-family: "MWFFluentIcons";
     content: "";
     font-weight: 400;
-    line-height: 1;
+    line-height: 16px;
     font-size: 1rem;
+    color: #0078d4;
 }
 .nav-item-indicator{
     width: 100%;
@@ -397,8 +433,6 @@ header{
     overflow-y: clip;
     overflow-clip-margin: content-box;
 } */
-
-
 .section-2-content-container{
     background-image: url(assets/images/section1-bg.avif);
     background-repeat: no-repeat;
@@ -551,7 +585,7 @@ header{
     padding: 56px 16px;
 }
 .section-3-content-container .section-head{
-    padding-bottom: 0.5rem;
+    /* padding-bottom: 0.5rem; */
 }
 .section-scrollbar-container{
     position: relative;
@@ -629,7 +663,6 @@ header{
 }
 .selected-button{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    white-space: nowrap;
     justify-content: space-between;
     align-items: center;
     border: none;
@@ -637,12 +670,14 @@ header{
     text-align: left;
     padding-bottom: 24px;
     width: 100%;
+    font-size: 16px;
 }
 .selected-button:after{
     font-family:'MWFFluentIcons';
     content: "";
     font-size: 1em;
     line-height: 1.5625rem;
+    margin-top: auto;
 }
 .section-list .section-list-item:nth-child(n+2):nth-child(-n+5) .selected-button{
     padding-top: 24px;
@@ -672,7 +707,7 @@ header{
     letter-spacing: -0.48px;
 }
 .selected-item-link{
-    /* margin-bottom: 24px; */
+    margin-bottom: 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     font-size: .875rem;
@@ -681,6 +716,10 @@ header{
     text-decoration: underline;
     text-underline-offset: 0.125rem;
     color: #004275;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-size-adjust: 100%;
 }
 .selected-item-link-text{
     padding-bottom: 2px;
@@ -688,10 +727,14 @@ header{
     font-size: .875rem;
     line-height: 1.25rem;
     letter-spacing: -0.48px;
+    text-size-adjust: 100%;
 }
 .selected-item-image-container{
-    width: 100%;
+    width: fit-content;
+    max-width: 100%;
     height: auto;
+    justify-content: center;
+    align-items: center;
     border-radius: 1rem;
     position: relative;
 }
@@ -704,10 +747,9 @@ header{
 }
 .play-button-container{
     position: absolute;
-    left: 0;
-    right: 0;
-    top:0;
-    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .play-button{
     background-color: #0078d4;
@@ -716,9 +758,14 @@ header{
     border-radius: 0.5rem;
     color: #ffff;
     text-decoration: none;
-    /* align-items: center;
-    justify-content: center; */
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.play-icon{
+    display: flex;
+    align-items: center;
 }
 .play-icon:before{
     font-family:'MWFFluentIcons';
@@ -751,12 +798,19 @@ header{
 .large-card{
     display: grid;
     box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
-    height: 387.2px;
+    height: 100%;
     width: 100%;
     border-radius: 1rem;
     position: relative;
 }
-.large-card::before{
+.large-card-image-container{
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+    grid-area: 1 / 1;
+    z-index: 1;
+}
+.large-card-image-container::before{
     content: "";
     background: linear-gradient(rgba(244, 250, 253, 0) 0%, rgb(244, 250, 253) 100%);
     position: absolute;
@@ -766,11 +820,7 @@ header{
     bottom: 0;
     width: 100%;
     height: 100%;
-}
-.large-card-image-container{
     border-radius: 1rem;
-    height: 100%;
-    width: 100%;
 }
 .large-card-image{
     width: 100%;
@@ -781,10 +831,17 @@ header{
     display: block;
 }
 .large-card-content{
+    flex-direction: column;
     width: 100%;
     padding: 16px;
-    position:absolute;
-    bottom: 1px;
+    grid-area: 1 / 1;
+    z-index: 2;
+}
+.safe-area{
+    height: 220px;
+}
+.large-card-content-container{
+    width: 100%;
     flex-direction: column;
     gap: 12px;
 }
@@ -802,6 +859,10 @@ header{
     line-height: 1.5rem;
     letter-spacing: -0.03em;
     color: #17253d;
+}
+.section-4 .main-banner-button a{
+    background-color: #0078d4;
+    color: #fff;
 }
 .large-card-content .main-banner-button-container{
     margin-top: unset;
@@ -949,6 +1010,10 @@ header{
 .section-5 .main-banner-button-container{
     margin-top: unset;
 }
+.section-5 .main-banner-button a{
+    background-color: #0078d4;
+    color: #fff;
+}
 
 /* -----------------section-6---------------- */
 
@@ -969,6 +1034,7 @@ header{
     letter-spacing: -0.05rem;
 }
 .section-6-main{
+    margin-top: -16px;
     padding-left: 16px;
     padding-right: 16px;
     background-image: url(assets/images/section-6-bg-image.avif);
@@ -976,7 +1042,6 @@ header{
     background-size: cover;
     background-position: center;
 }
-
 .section-6 .section-scrollbar-container{
     position: unset;
 }
@@ -1103,12 +1168,12 @@ header{
     width: 100%;
     border-radius: 1rem;
     border: 1px solid rgba(255,255,255,0.1);
+    background-color:rgba(255,255,255,0.1) ;
+    backdrop-filter: blur(20px);
 }
 .section-6-image-container{
     width: 100%;
     max-width: 100%;
-    background-color:rgba(255,255,255,0.1) ;
-    backdrop-filter: blur(80px);
 }
 .section-6-image{
     width: 100%;
@@ -1166,8 +1231,12 @@ header{
 .section-8 .section-head{
     padding-bottom: 0.5rem;
 }
+.section-8 .section-content{
+    flex-direction: column;
+    gap: 24px;
+}
 .carousels-container{
-    margin-bottom: 65px;
+    margin-bottom: 81px;
 }
 .carousel-container{
     padding: 3px;
@@ -1196,6 +1265,7 @@ header{
     padding: 16px;
     flex-direction: column;
     gap: 24px;
+    height: auto;
 }
 .carousel-logo-section{
     flex-direction: column;
@@ -1237,19 +1307,46 @@ header{
     letter-spacing: -0.03em;
     color: #0e1726;
 }
+
+
+
+/* rebuild */
+
 .card-links{
-    gap: 0.75rem;
+    column-gap: 0.75rem;
+    row-gap: 0.5rem;
     flex-wrap: wrap;
 }
 .card-link{
     gap: 0.5rem;
-    white-space: nowrap;
-    /* line-height: 24px; */
+}
+
+/* rebuild */
+
+
+.card-link-icon-container{
+    font-size: 20px;
+    height: 20px;
+    max-height: 20px;
+    width: 16px;
+    max-width: 20px;
+    text-wrap: wrap;
+    text-align: left;
+    white-space-collapse: collapse;
+}
+.card-link:nth-child(3) .card-link-icon-container{
+    width: 20px;
+}
+.card-link:nth-child(4) .card-link-icon-container{
+    width: 20px;
 }
 .card-link-icon{
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 100%;
+    max-width:20px;
+    max-height: 20px;
     font-size: 1.25rem;
+    vertical-align: middle;
 }
 .card-link-text{
     color: #0067b8;
@@ -1259,6 +1356,63 @@ header{
     line-height: 1.25rem;
     letter-spacing: -0.48px;
 }
+.carousels-content-container{
+    position: relative;
+}
+.carousel-controls{
+    margin:auto;
+    position:absolute;
+    bottom: 0; 
+    z-index:1;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 8px;
+}
+.carousel-control-button{
+    padding: 13px 0px;
+    padding-left: 14px;
+    padding-right: 12px;
+    align-items: center;
+    align-self: center;
+    height: fit-content;
+    color: #004275;
+    border: 2px solid #17253d;
+    border-radius: 200px;
+    opacity: 0.2;
+    background: #fff;
+}
+.control-icon{
+    align-items: center;
+    color: #004275;
+}
+.control-icon::before{
+    font-family: 'MWFFluentIcons';
+    content: "";
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1;
+}
+.carousel-control-button:last-child{
+    opacity: unset;
+}
+.carousel-control-button:last-child .control-icon::before{
+    content: "";
+}
+
+
+.section-8 .main-banner-button-container{
+    margin-top: 24px;
+}
+.section-8 .main-banner-button a{
+    background-color: #0078d4;
+    color: #fff;
+    border-color: transparent;
+}
+.section-8 .card-button-container{
+    margin-top: unset;
+}
+
+
 
 /* -------------------section-9------------------ */
 .section-9{
@@ -1271,7 +1425,9 @@ header{
     padding: 56px 16px;
 }
 .section-9 .section-content{
-    margin-top: 32px;
+    margin-top: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .section-9 .section-head{
     text-align: center;
@@ -1280,13 +1436,31 @@ header{
     font-size: 28px;
     letter-spacing: -1.4px;
     line-height: 36px;
+    color: #FAFAFD;
 }
 .section-9 .small-cards-container{
     gap: 8px;
 }
+.section-9 .small-card{
+    flex: 1 1 auto;
+    min-width: 1px;
+    display: flex;
+    flex-direction: column;
+}
+.section-9 .card-head{
+    align-items: flex-start;
+    text-align: left;
+    overflow-wrap: break-word;
+    font-size: 16px;
+    white-space: wrap;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .section-9 .small-card-title{
     font-size: 18px;
     letter-spacing: -0.54px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 .section-9 .card-button-container{
     margin-top: 32px;
@@ -1396,12 +1570,18 @@ footer{
     font-weight: 400;
     letter-spacing: normal;
     line-height: 16px;
+    text-align: left;
 }
 .footer-list-item{
     padding: 8px 0;
+    font-size: 11px;
+    line-height: 16px;
+    text-size-adjust: 100%;
+    height: 32px;
 }
 .footer-list-link{
     color: #616161;
+    line-height: 16px;
     text-decoration: none;
     word-break: break-word;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

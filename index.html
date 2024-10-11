@@ -193,11 +193,11 @@
         <div class="section-1"> 
             <div class="main-banner-image-container">
                 <picture>
-                    <source srcset="assets/images/azure-main-1400.avif" media="(min-width:1400px)">
-                    <source srcset="assets/images/azure-main-1084.avif" media="(min-width:1084px)">
-                    <source srcset="assets/images/azure-main-860.avif" media="(min-width:860px)">
-                    <source srcset="assets/images/azure-main-540.avif" media="(min-width:540px)">
-                    <img  class="main-image" src="assets/images/azure-main.avif" alt="pic">
+                    <source srcset="assets/images/" media="(min-width:1400px)">
+                    <source srcset="assets/images/" media="(min-width:1084px)">
+                    <source srcset="assets/images/azure-main-860-01.avif" media="(min-width:860px)">
+                    <source srcset="assets/images/azure-main-540-01.avif" media="(min-width:540px)">
+                    <img  class="main-image" src="assets/images/azure-main-01.avif" alt="pic">
                 </picture>
             </div>
             <div class="main-banner-content-container">
@@ -207,18 +207,29 @@
                             AZURE. LIMITLESS INNOVATION.
                         </div>
                         <div class="main-banner-title">
-                            <h1>It all comes down to trust</h1>
+                            <h1>The best ideas need the best AI platform</h1>
                         </div>
                         <div class="main-banner-description">
-                            Build and deploy AI solutions confidently with privacy, safety, and security features from Azure. Pay as you go or try Azure free for up to 30 days. There’s no upfront commitment—cancel anytime.
+                            Rely on a flexible, industry-leading platform to build the AI apps you dream up. Pay as you go or try Azure free for up to 30 days. There’s no upfront commitment—cancel anytime.
                         </div>
-                        <div class="main-banner-button-container">
-                            <div class="main-banner-button">
-                                <a href="#">
-                                    <span class="main-button-text">
-                                        Get started with Azure
-                                    </span>
-                                </a>
+                        <div class="main-button-wrapper flex">
+                            <div class="main-banner-button-container">
+                                <div class="main-banner-button">
+                                    <a href="#">
+                                        <span class="main-button-text">
+                                            Get started with Azure
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="main-banner-button-container">
+                                <div class="main-banner-button">
+                                    <a href="#">
+                                        <span class="main-button-text">
+                                            Explore Azure AI
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -229,12 +240,23 @@
         <!-- ---------------- sticky header navbar ------------------ -->
         <div class="sticky-navbar-container">
             <nav class="sticky-nav flex">
-                <div class="dropdown flex">
-                    <a href="#"> Featured news </a>
-                    <span class="down-arrow"></span>
+                <div class="dropdown-container">
+                    <!-- <div class="dropdown flex">
+                        <span class="dropdown-item-label flex">
+                            <a href="#">Featured news</a>
+                        </span>
+                        <span class="down-arrow"></span>
+                    </div> -->
+                    <a href="#" class="dropdown flex">
+                        <span class="dropdown-item-label">Featured news</span>
+                        <!-- <span class="dropdown-item-label flex">
+                            <a href="#">Featured news</a>
+                        </span> -->
+                        <span class="down-arrow"></span>
+                    </a>
                 </div>
-                <div class="nav-item-indicator"></div>
             </nav>
+            <div class="nav-item-indicator"></div>
         </div>
         <!-- ------------------- section-2 --------------------------- -->
         <section>
@@ -262,30 +284,31 @@
                     <div class="section2-content flex">
                         <div class="card flex">
                             <div class="card-image-container">
-                                <picture>
+                                <img  class="card-image" src="assets/images/card-01-img.avif" alt="pic">
+                                <!-- <picture>
                                     <source srcset="assets/images/card1-img-1400.avif" media="(min-width:1400px)">
                                     <source srcset="assets/images/card1-img-1084.avif" media="(min-width:1084px)">
                                     <source srcset="assets/images/card1-img-860.avif" media="(min-width:860px)">
                                     <source srcset="assets/images/card1-img-540.avif" media="(min-width:540px)">
-                                    <img  class="card-image" src="assets/images/card1-img.avif" alt="pic">
-                                </picture>
+                                    <img  class="card-image" src="assets/images/card-01-img.avif" alt="pic">
+                                </picture> -->
                             </div>
                             <div class="card-content-container flex">
                                 <div class="card-description-container flex">
-                                    <p class="card-title">Innovate with AI responsibly and securely</p>
-                                    <p class="card-description">Secure your data and build AI apps confidently with responsible AI tools and the latest security and privacy features.</p>
+                                    <p class="card-title">Models as a Service is now available</p>
+                                    <p class="card-description">Implement generative AI models without the need to manage the underlying infrastructure.</p>
                                 </div>
                                 <div class="card-button-container flex">
                                     <a class="card-button-wrapper flex " href="#">
                                         <span class="card-button"></span>
-                                        <span class="card-link">Explore responsible AI</span>
+                                        <span class="card-link">Learn more</span>
                                     </a>
                                 </div>  
                             </div>
                         </div>
                         <div class="card flex">
                             <div class="card-image-container">
-                                <img class="card-image" src="assets/images/card2-img.avif" alt="pic">
+                                <img class="card-image" src="assets/images/card-02-img.avif" alt="pic">
                                 <!-- <picture>
                                     <source srcset="assets/images/card1-img-1400.avif" media="(min-width:1400px)">
                                     <source srcset="assets/images/card1-img-1084.avif" media="(min-width:1084px)">
@@ -295,13 +318,13 @@
                             </div>
                             <div class="card-content-container flex">
                                 <div class="card-description-container flex">
-                                    <p class="card-title">Build on a trusted platform</p>
-                                    <p class="card-description">Create next-gen AI solutions with a responsible platform dedicated to security, reliability, and sustainability.</p>
+                                    <p class="card-title">New OpenAI models</p>
+                                    <p class="card-description">Build more powerful apps with the latest generative AI models, including GPT-4o and GPT-4o mini.</p>
                                 </div>
                                 <div class="card-button-container flex">
                                     <a class="card-button-wrapper flex " href="#">
                                         <span class="card-button"></span>
-                                        <span class="card-link">Learn more</span>
+                                        <span class="card-link">Explore Azure OpenAI Service</span>
                                     </a>
                                 </div>  
                             </div>
@@ -392,34 +415,15 @@
                                         <div class="selected-item-description">
                                             Build intelligent apps at enterprise scale with the Azure AI portfolio.
                                         </div>
-                                        <div class="selected-item-link-container">
-                                            <a class="selected-item-link" href="#">
-                                                <span class="selected-item-link-text">
-                                                    Explore Azure AI solutions
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="selected-item-image-container">
-                                            <picture>
-                                                <source srcset="assets/images/section-2-list-image-860" media="(min-width:860px)">
-                                                <source srcset="assets/images/section-2-list-image-540.avif" media="(min-width:540px)">
-                                                <img  class="selected-image" src="assets/images/section-2-list-image.avif" alt="pic">
-                                            </picture>
-                                            <div class="play-button-container">
-                                                <a class="play-button" href="#">
-                                                    <span class="play-icon"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="selected-item-image-section "> -->
-                                            <!-- <div>
+                                        <div class="selected-item-image-section">
+                                            <!-- <div class="selected-item-link-container"> -->
                                                 <a class="selected-item-link" href="#">
                                                     <span class="selected-item-link-text">
                                                         Explore Azure AI solutions
                                                     </span>
                                                 </a>
-                                            </div> -->
-                                            <!-- <div class="selected-item-image-container">
+                                            <!-- </div> -->
+                                            <div class="selected-item-image-container flex">
                                                 <picture>
                                                     <source srcset="assets/images/section-2-list-image-860" media="(min-width:860px)">
                                                     <source srcset="assets/images/section-2-list-image-540.avif" media="(min-width:540px)">
@@ -430,8 +434,8 @@
                                                         <span class="play-icon"></span>
                                                     </a>
                                                 </div>
-                                            </div> -->
-                                        <!-- </div> -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="section-list-item">
@@ -525,23 +529,26 @@
                             <div class="large-card">
                                 <div class="large-card-image-container">
                                     <picture>
-                                        <!-- <source srcset="assets/images/card3-img-1400.avif" media="(min-width:1400px)">
-                                        <source srcset="assets/images/card3-img-1084.avif" media="(min-width:1084px)">
-                                        <source srcset="assets/images/card3-img-860.avif" media="(min-width:860px)"> -->
+                                        <source srcset="assets/images/section-4-card-image-1400.avif" media="(min-width:1400px)">
+                                        <source srcset="assets/images/section-4-card-image-1084.avif" media="(min-width:1084px)">
+                                        <!-- <source srcset="assets/images/card3-img-860.avif" media="(min-width:860px)"> -->
                                         <source srcset="assets/images/section-4-card-image-540.avif" media="(min-width:540px)">
                                         <img  class="large-card-image" src="assets/images/section-4-card-image.avif" alt="pic">
                                     </picture>
                                 </div>
                                 <div class="large-card-content flex">
-                                    <h3 class="large-card-title">Azure AI model catalog</h3>
-                                    <p class="large-card-subtitle">Discover, evaluate, customize, and deploy AI models</p>
-                                    <div class="main-banner-button-container">
-                                        <div class="main-banner-button">
-                                            <a href="#">
-                                                <span class="main-button-text">
-                                                    Explore the product
-                                                </span>
-                                            </a>
+                                    <div class="safe-area"></div>
+                                    <div class="large-card-content-container flex">
+                                        <h3 class="large-card-title">Azure AI model catalog</h3>
+                                        <p class="large-card-subtitle">Discover, evaluate, customize, and deploy AI models</p>
+                                        <div class="main-banner-button-container">
+                                            <div class="main-banner-button">
+                                                <a href="#">
+                                                    <span class="main-button-text">
+                                                        Explore the product
+                                                    </span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -819,70 +826,88 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section-content">
-                        <div class="carousels-container">
-                            <div class="carousel-container">
-                                <div class="carousel flex">
-                                    <div class="carousel-image-container">
-                                        <img class="carousel-image" src="assets/images/carousel-image-1.avif" alt="">
-                                    </div>
-                                    <div class="carousel-content-container flex">
-                                        <div class="carousel-logo-section flex">
-                                            <div class="carousel-logo-container">
-                                                <img calss="carousel-logo" src="assets/images/hp-logo.avif" alt="">
-                                            </div>
-                                            <div class="carousel-description">
-                                                HP incorporated GitHub Copilot into its workflow to help developers collaborate more easily and work more productively.
-                                            </div>
+                    <div class="section-content flex">
+                        <div class="carousels-content-container">
+                            <div class="carousels-container">
+                                <div class="carousel-container">
+                                    <div class="carousel flex">
+                                        <div class="carousel-image-container">
+                                            <img class="carousel-image" src="assets/images/carousel-image-1.avif" alt="">
                                         </div>
-                                        <div class="carousel-links-section flex">
-                                            <div class="carousel-product-link-section flex">
-                                                <div class="card-link-title">
-                                                    Products
+                                        <div class="carousel-content-container flex">
+                                            <div class="carousel-logo-section flex">
+                                                <div class="carousel-logo-container">
+                                                    <img class="carousel-logo" src="assets/images/hp-logo.avif" alt="">
                                                 </div>
-                                                <div class="card-links-section">
-                                                    <div class="card-links flex">
-                                                        <div class="card-link flex">
-                                                            <img class="card-link-icon" src="assets/images/github-copilot.svg" alt="">
-                                                            <a class="card-link-text" href="#">GitHub Copilot</a>
-                                                        </div>
-                                                        <div class="card-link flex">
-                                                            <img class="card-link-icon" src="assets/images/azure-devops.svg" alt="">
-                                                            <a class="card-link-text" href="#">Azure DevOps</a>
-                                                        </div>
-                                                        <div class="card-link flex">
-                                                            <img class="card-link-icon" src="assets/images/visual-studio.svg" alt="">
-                                                            <a class="card-link-text" href="#">Visual Studio</a>
-                                                        </div>
-                                                        <div class="card-link flex">
-                                                            <img class="card-link-icon" src="assets/images/github-enterprise.svg" alt="">
-                                                            <a class="card-link-text" href="#">GitHub Enterprise</a>
+                                                <div class="carousel-description">
+                                                    HP incorporated GitHub Copilot into its workflow to help developers collaborate more easily and work more productively.
+                                                </div>
+                                            </div>
+                                            <div class="carousel-links-section flex">
+                                                <div class="carousel-product-link-section flex">
+                                                    <div class="card-link-title">
+                                                        Products
+                                                    </div>
+                                                    <div class="card-links-section">
+                                                        <div class="card-links flex">
+                                                            <div class="card-link flex">
+                                                                <div class="card-link-icon-container flex">
+                                                                    <img class="card-link-icon" src="assets/images/github-copilot.svg" alt="">
+                                                                </div>
+                                                                <a class="card-link-text" href="#">GitHub Copilot</a>
+                                                            </div>
+                                                            <div class="card-link flex">
+                                                                <div class="card-link-icon-container flex">
+                                                                    <img class="card-link-icon" src="assets/images/azure-devops.svg" alt="">
+                                                                </div>
+                                                                <a class="card-link-text" href="#">Azure DevOps</a>
+                                                            </div>
+                                                            <div class="card-link flex">
+                                                                <div class="card-link-icon-container flex">
+                                                                    <img class="card-link-icon" src="assets/images/visual-studio.svg" alt="">
+                                                                </div>
+                                                                <a class="card-link-text" href="#">Visual Studio</a>
+                                                            </div>
+                                                            <div class="card-link flex">
+                                                                <div class="card-link-icon-container flex">
+                                                                    <img class="card-link-icon" src="assets/images/github-enterprise.svg" alt="">
+                                                                </div>
+                                                                <a class="card-link-text" href="#">GitHub Enterprise</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="main-banner-button-container">
-                                                <div class="main-banner-button">
-                                                    <a href="#">
-                                                        <span class="main-button-text">
-                                                            Case study
-                                                        </span>
-                                                    </a>
+                                                <div class="main-banner-button-container">
+                                                    <div class="main-banner-button">
+                                                        <a href="#">
+                                                            <span class="main-button-text">
+                                                                Case study
+                                                            </span>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="arrow-button-container">
-                                <button class="mobile-arrow-button"></button>
-                                <button class="mobile-arrow-button mobile-arrow-button-right"></button>
+                            <div class="carousel-controls flex">
+                                <button class="carousel-control-button flex">
+                                    <span class="control-icon flex"></span>
+                                </button>
+                                <button class="carousel-control-button">
+                                    <span class="control-icon flex"></span>
+                                </button>
                             </div>
                         </div>
+
+
+                        
+
                         <div class="card-button-container flex">
                             <a class="card-button-wrapper flex " href="#">
                                 <span class="card-button"></span>
-                                <span class="card-link">Explore migration solutions</span>
+                                <span class="card-link">View all stories</span>
                             </a>
                         </div>  
                     </div>
