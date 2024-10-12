@@ -239,7 +239,7 @@ header{
 
 .section-1{
     padding-bottom: 56px;
-    background-color: #17253d;
+    background-color: rgb(0, 41, 72);
     /* background: linear-gradient(90deg, #ede8f6 0%, #f4fafd 49.99%, #dceef8 100%); */
 }
 .main-banner-image-container{
@@ -254,7 +254,7 @@ header{
 }
 .main-banner-content-container{
     /* background: linear-gradient(90deg, #ede8f6 0%, #f4fafd 49.99%, #dceef8 100%); */
-    background-color: #17253d;
+    background-color: rgb(0, 41, 72);
     /* background:linear-gradient(180deg, rgba(4, 13, 18, 0) 0%, rgba(4, 13, 18, 0.8) 93.59%); */
     padding: 0 1rem;
     margin-bottom: 32px;
@@ -1655,88 +1655,90 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* -----------------MEDIA QUERIES------------------ */
+/* @media screen and (min-width:539px) and (max-width:717px){
+    .footer-section-1 .footer-section-1-content:nth-child(3) .footer-list-item:nth-child(2){
+        height: 48px;
+    }
+    .footer-section-1 .footer-section-1-content:nth-child(5) .footer-list-item:nth-child(7){
+        height: 48px;
+    }
+} */
+
+@media screen and (min-width:539px){
+    .footer-section-1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
 @media screen and (min-width:540px){
     .main-banner-content-container{
         padding: 0 4rem;
+    }
+    .main-button-wrapper{
+        flex-direction: row;
+    }
+    .main-banner-button-container:nth-child(2){
+        margin-top: 24px;
     }
     .main-banner-button{
         flex-direction: row;
         justify-content: flex-start;
     }
+    /* ------------------------------- */
+    .section-2-content-container{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    /* ------------------------------ */
+    .section-3-content-container{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    /* ----------------------------- */
+    .section-4-content-container{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    /* --------------------------- */
+    .section-5-content-container{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    .section-5 .card-content-container{
+        padding-right: 40px;
+    }
+    /* -------------------------- */
+    .section-6 .section-head{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    .section-6 .section-6-main{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    /* ------------------------ */
+    .section-7 .main-banner-button{
+        justify-content: center;
+    }
+    /* ------------------------ */
+    .section-8-content-container{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    /* ------------------------ */
+    .section-9-content-container{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    /* ------------------------ */
+    .section-10-content-container{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
 }
-@media screen and (min-width:860px){
 
+@media screen and (min-width:860px){
     header{
         margin-bottom: 2px;
     }
