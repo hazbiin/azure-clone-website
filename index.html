@@ -106,7 +106,6 @@
                             <div class="nested-nav-item">
                                 <button class="nested-nav-item-button">
                                     Explore
-                                    
                                 </button>
                             </div>
                         </li>
@@ -114,7 +113,6 @@
                             <div class="nested-nav-item">
                                 <button class="nested-nav-item-button">
                                     Products
-                                    
                                 </button>
                             </div>
                         </li>
@@ -122,7 +120,6 @@
                             <div class="nested-nav-item">
                                 <button class="nested-nav-item-button">
                                     Solutions
-                                    
                                 </button>
                             </div>
                         </li>
@@ -130,7 +127,6 @@
                             <div class="nested-nav-item">
                                 <button class="nested-nav-item-button">
                                     Pricing
-                                    
                                 </button>
                             </div>
                         </li>
@@ -138,7 +134,6 @@
                             <div class="nested-nav-item">
                                 <button class="nested-nav-item-button">
                                     Partners
-                                    
                                 </button>
                             </div>
                         </li>
@@ -146,7 +141,6 @@
                             <div class="nested-nav-item">
                                 <button class="nested-nav-item-button">
                                     Resources
-                                    
                                 </button>
                             </div>
                         </li>
@@ -154,7 +148,6 @@
                             <div class="nested-nav-item">
                                 <button class="nested-nav-item-button">
                                     More
-                                    
                                 </button>
                             </div>
                         </li>
@@ -241,7 +234,9 @@
             <div class="ai-chat-banner-container flex">
                 <div class="ai-description-section flex">
                     <div class="ai-svg-container">
-                        <img src="assets/svgs/AI-icon-white.svg" alt="">
+                        <div class="ai-svg">
+                            <img src="assets/svgs/AI-icon-white.svg" alt="">
+                        </div>
                     </div>
                     <div class="ai-description-container flex">
                         <div class="ai-title">
@@ -373,9 +368,7 @@
                     <div class="section2-content flex">
                         <div class="card flex">
                             <div class="card-image-container">
-                                <div class="card-image-flex flex">
-                                    <img  class="card-image" src="assets/images/card-01-img.avif" alt="pic">
-                                </div>
+                                <img  class="card-image" src="assets/images/card-01-img.avif" alt="pic">
                             </div>
                             <div class="card-content-container flex">
                                 <div class="card-description-container flex">
@@ -420,7 +413,7 @@
                             <div class="card-content-container flex">
                                 <div class="card-description-container flex">
                                     <p class="card-title">Get ready for Microsoft Ignite</p>
-                                    <p class="card-description">Join us November 18–22, 2024 to explore the latest innovations, learn from experts, level up your skillset, and expand your network.</p>
+                                    <p class="card-description">Join us November 18-22, 2024 to explore the latest innovations, learn from experts, level up your skillset, and expand your network.</p>
                                 </div>
                                 <div class="card-button-container flex">
                                     <a class="card-button-wrapper flex " href="#">
@@ -485,10 +478,9 @@
                         </div>
                         <div class="section-list-container flex">
                             <ul class="section-list">
-                               
-                                <li class="section-list-item ">
-                                    <!-- <span class="selected-indicator"></span> -->
-                                   
+                                <li class="section-list-item flex">
+                                    <span class="selected-indicator"></span>
+                                    <div class="list-item-container">
                                         <button class="selected-button flex">
                                             <h3 class="list-text">AI</h3>
                                         </button>
@@ -505,11 +497,18 @@
                                                     </a>
                                                 <!-- </div> -->
                                                 <div class="selected-item-image-container flex">
-                                                    <picture>
+                                                    <div class="selected-item-image">
+                                                        <picture>
+                                                            <source srcset="assets/images/section-2-list-image-860.avif" media="(min-width:860px)">
+                                                            <source srcset="assets/images/section-2-list-image-540.avif" media="(min-width:540px)">
+                                                            <img  class="selected-image" src="assets/images/section-2-list-image.avif" alt="pic">
+                                                        </picture>
+                                                    </div>
+                                                    <!-- <picture>
                                                         <source srcset="assets/images/section-2-list-image-860.avif" media="(min-width:860px)">
                                                         <source srcset="assets/images/section-2-list-image-540.avif" media="(min-width:540px)">
                                                         <img  class="selected-image" src="assets/images/section-2-list-image.avif" alt="pic">
-                                                    </picture>
+                                                    </picture> -->
                                                     <div class="play-button-container">
                                                         <a class="play-button" href="#">
                                                             <span class="play-icon"></span>
@@ -518,8 +517,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                   
-                                   
+                                    </div>
                                 </li>
                                 <li class="section-list-item">
                                     <button class="selected-button flex">
@@ -553,7 +551,6 @@
                 </div>
             </div>
         </section>
-
         <!-- ----------------- section-4 ------------------ -->
         <section>
             <div class="section-4">
@@ -637,11 +634,8 @@
                                         </div>
                                     </div>
                                 </div>
-                           
                             </div>
-                               
-                           
-                            <div class="small-cards-container flex ">
+                            <div class="small-cards-container flex">
                                 <div class="small-card">
                                     <div class="small-card-content flex">
                                         <div class="card-head flex">
@@ -649,7 +643,10 @@
                                                 <img class="card-logo" src="assets/images/card-logo-1.svg" alt="">
                                             </div>
                                             <h6 class="small-card-title">Azure OpenAI Service</h6>
-                                            <p class="small-card-subtitle">Build your own copilot and generative AI applications.</p>
+                                            <div class="small-card-subtitle">
+                                                Build your own copilot and generative AI applications.
+                                            </div>
+                                            <!-- <p class="small-card-subtitle">Build your own copilot and generative AI applications.</p> -->
                                         </div>
                                         <div class="small-card-link-container flex">
                                             <a class="small-card-link flex" href="#">
@@ -755,40 +752,46 @@
                         <div class="card-button-container flex">
                             <a class="card-button-wrapper flex " href="#">
                                 <span class="card-button"></span>
-                                <span class="card-link">View all products (200+)</span>
+                                <span class="card-link">See all products (200+)</span>
                             </a>
                         </div>  
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ----------------------section-5 ------------------ -->
+        <!-- ----------------------section-5 ----------------------- -->
          <section>
             <div class="section-5">
                 <div class="section-5-content-container">
-                    <div class="row flex">
-                        <div class="section-content">
-                            <div class="gartner-card flex">
-                                <div class="gartner">
-                                    <div class="gartner-image-container">
-                                        <img class="gartner-image" src="assets/images/gartner-image.avif" alt="pic">
-                                    </div>
-                                </div>
-                                <div class="card-content-container flex">
-                                    <div></div>
-                                    <div class="card-description-container flex">
-                                        <p class="card-title">See why Gartner named Microsoft a Leader</p>
-                                        <p class="card-description">Discover why Microsoft was named a Leader and positioned furthest to the right for Completeness of Vision in the 2023 Gartner® Magic Quadrant™ for Strategic Cloud Platform Services (SCPS).</p>
-                                    </div>
-                                    <div class="main-banner-button-container">
-                                        <div class="main-banner-button">
-                                            <a href="#">
-                                                <span class="main-button-text">
-                                                    Read the Blog
-                                                </span>
-                                            </a>
+                    <div class="section-5-content">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="gartner-card flex">
+                                        <div class="row direction-row">
+                                            <div class="gartner">
+                                                <div class="gartner-image-container">
+                                                    <img class="gartner-image" src="assets/images/gartner-image.avif" alt="pic">
+                                                </div>
+                                            </div>
+                                            <div class="card-content-container flex">
+                                                <div></div>
+                                                <div class="card-description-container flex">
+                                                    <p class="card-title">See why Gartner named Microsoft a Leader</p>
+                                                    <p class="card-description">Discover why Microsoft was named a Leader and positioned furthest to the right for Completeness of Vision in the 2023 Gartner® Magic Quadrant™ for Strategic Cloud Platform Services (SCPS).</p>
+                                                </div>
+                                                <div class="main-banner-button-container">
+                                                    <div class="main-banner-button">
+                                                        <a href="#">
+                                                            <span class="main-button-text">
+                                                                Read the Blog
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </div>      
                                 </div>
                             </div>
                         </div>
@@ -800,13 +803,15 @@
          <section>
             <div class="section-6">
                 <div class="section-6-content-container">
-                    <div class="section-head flex">
-                        <div class="section-head-container">
-                            <div class="section-title">
-                                Resources by role
-                            </div>
-                            <div class="section-heading">
-                                <h2 class="heading">Tranform the way you work</h2>
+                    <div class="section-6-head-container">
+                        <div class="section-head flex">
+                            <div class="section-head-container">
+                                <div class="section-title">
+                                    Resources by role
+                                </div>
+                                <div class="section-heading">
+                                    <h2 class="heading">Transform the way you work</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -814,14 +819,15 @@
                         <div class="section-6-scrollbar-section">
                             <div class="section-scrollbar-container">
                                 <div class="section-scrollbar flex">
-                                    <span class="scroll-button-container">
+                                    <!-- <span class="scroll-button-container"> -->
                                         <button class="scroll-button">
                                             <span class="scroll-button-text">
                                                 IT professionals
                                             </span>
+                                            <div class="scrollbar-indicator"></div>
                                         </button>
-                                        <div class="scrollbar-indicator"></div>
-                                    </span>
+                                        <!-- <div class="scrollbar-indicator"></div> -->
+                                    <!-- </span> -->
                                     <button class="scroll-button">
                                         <span class="scroll-button-text">
                                             Developers
@@ -853,6 +859,11 @@
                                 <button class="mobile-arrow-button"></button>
                                 <button class="mobile-arrow-button mobile-arrow-button-right"></button>
                             </div>
+                            <!-- <div class="right-button-container">
+                                <div class="right-button-wrapper">
+                                    <button class="right-button"></button>
+                                </div>
+                            </div> -->
                         </div>
                         <div class="section-content">
                             <div class="section-6-description-section">
@@ -877,10 +888,6 @@
          <!-- ------------------------------section-7------------------------ -->
           <section>
             <div class="section-7">
-              
-
-
-
                 <div class="main-banner-content-container">
                     <div class="main-content-container flex">
                         <div class="main-content">
@@ -992,10 +999,6 @@
                                 </button>
                             </div>
                         </div>
-
-
-                        
-
                         <div class="card-button-container flex">
                             <a class="card-button-wrapper flex " href="#">
                                 <span class="card-button"></span>
@@ -1307,47 +1310,9 @@
                             </li>
                         </ul>
                     </nav>
-
-
-
-
-
-
-
-
                 </div>
             </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <div class="bottom-blank-space"></div>
     </main>
-
 </body>
 </html>
