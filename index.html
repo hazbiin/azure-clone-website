@@ -373,7 +373,12 @@
                             <div class="card-content-container flex">
                                 <div class="card-description-container flex">
                                     <p class="card-title">Models as a Service is now available</p>
-                                    <p class="card-description">Implement generative AI models without the need to manage the underlying infrastructure.</p>
+                                    <div class="card-description-wrapper">
+                                        <div class="card-description">
+                                            Implement generative AI models without the need to manage the underlying infrastructure.
+                                        </div>
+                                    </div>
+                                    <!-- <p class="card-description">Implement generative AI models without the need to manage the underlying infrastructure.</p> -->
                                 </div>
                                 <div class="card-button-container flex">
                                     <a class="card-button-wrapper flex " href="#">
@@ -927,16 +932,18 @@
                     </div>
                     <div class="section-content flex">
                         <div class="carousels-content-container">
-                            <div class="carousels-container">
-                                <div class="carousel-container">
+                            <div class="carousels-container flex">
+                                <div class="carousel-container flex">
                                     <div class="carousel flex">
                                         <div class="carousel-image-container">
                                             <img class="carousel-image" src="assets/images/carousel-image-1.avif" alt="">
                                         </div>
                                         <div class="carousel-content-container flex">
                                             <div class="carousel-logo-section flex">
-                                                <div class="carousel-logo-container">
-                                                    <img class="carousel-logo" src="assets/images/hp-logo.avif" alt="">
+                                                <div class="carousel-logo-wrapper">
+                                                    <div class="carousel-logo-container">
+                                                        <img class="carousel-logo" src="assets/images/hp-logo.avif" width="173" height="74">
+                                                    </div>
                                                 </div>
                                                 <div class="carousel-description">
                                                     HP incorporated GitHub Copilot into its workflow to help developers collaborate more easily and work more productively.
@@ -947,32 +954,36 @@
                                                     <div class="card-link-title">
                                                         Products
                                                     </div>
-                                                    <div class="card-links-section">
-                                                        <div class="card-links flex">
-                                                            <div class="card-link flex">
-                                                                <div class="card-link-icon-container flex">
-                                                                    <img class="card-link-icon" src="assets/images/github-copilot.svg" alt="">
+                                                    <div class="card-links flex">
+                                                        <ul class="card-links-list flex">
+                                                            <li class="card-link-list-item">
+                                                                <div class="card-link flex">
+                                                                    <div class="card-link-icon-container flex">
+                                                                        <img class="card-link-icon" src="assets/images/github-copilot.svg" alt="">
+                                                                    </div>
+                                                                    <a class="card-link-text" href="#">GitHub Copilot</a>
                                                                 </div>
-                                                                <a class="card-link-text" href="#">GitHub Copilot</a>
-                                                            </div>
-                                                            <div class="card-link flex">
-                                                                <div class="card-link-icon-container flex">
-                                                                    <img class="card-link-icon" src="assets/images/azure-devops.svg" alt="">
+                                                            </li>
+                                                            <li class="card-link-list-item">
+                                                                <div class="card-link flex">
+                                                                    <div class="card-link-icon-container flex">
+                                                                        <img class="card-link-icon" src="assets/images/azure-devops.svg" alt="">
+                                                                    </div>
+                                                                    <a class="card-link-text" href="#">Azure DevOps</a>
                                                                 </div>
-                                                                <a class="card-link-text" href="#">Azure DevOps</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="card-link flex">
+                                                            <div class="card-link-icon-container flex width-20">
+                                                                <img class="card-link-icon" src="assets/images/visual-studio.svg" alt="">
                                                             </div>
-                                                            <div class="card-link flex">
-                                                                <div class="card-link-icon-container flex">
-                                                                    <img class="card-link-icon" src="assets/images/visual-studio.svg" alt="">
-                                                                </div>
-                                                                <a class="card-link-text" href="#">Visual Studio</a>
+                                                            <a class="card-link-text" href="#">Visual Studio</a>
+                                                        </div>
+                                                        <div class="card-link flex">
+                                                            <div class="card-link-icon-container flex width-20">
+                                                                <img class="card-link-icon" src="assets/images/github-enterprise.svg" alt="">
                                                             </div>
-                                                            <div class="card-link flex">
-                                                                <div class="card-link-icon-container flex">
-                                                                    <img class="card-link-icon" src="assets/images/github-enterprise.svg" alt="">
-                                                                </div>
-                                                                <a class="card-link-text" href="#">GitHub Enterprise</a>
-                                                            </div>
+                                                            <a class="card-link-text" href="#">GitHub Enterprise</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -997,6 +1008,81 @@
                                 <button class="carousel-control-button">
                                     <span class="control-icon flex"></span>
                                 </button>
+                            </div>
+                            <!-- -------------- large-screen carousel controls ------------  -->
+                            <div class="carousel-controls-2 flex">
+                                <ul class="carousel-controls-list flex">
+                                    <li class="control-list-item">
+                                        <a href="#" class="control-link flex">
+                                            <div class="list-item-logo-container">
+                                                <div class="list-item-logo flex">
+                                                    <div class="list-item-logo-svg flex">
+                                                        <div class="product-logo-container">
+                                                            <img class="product-logo" src="assets/images/hp-logo.avif" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="caurousel-control-indicator"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="control-list-item">
+                                        <a href="#" class="control-link flex">
+                                            <div class="list-item-logo-container">
+                                                <div class="list-item-logo flex">
+                                                    <div class="list-item-logo-svg flex">
+                                                        <div class="product-logo-container">
+                                                            <img class="product-logo" src="assets/images/unity-logo.avif" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="caurousel-control-indicator"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="control-list-item">
+                                        <a href="#" class="control-link flex">
+                                            <div class="list-item-logo-container">
+                                                <div class="list-item-logo flex">
+                                                    <div class="list-item-logo-svg flex">
+                                                        <div class="product-logo-container">
+                                                            <img class="product-logo" src="assets/images/lego-logo.avif" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="caurousel-control-indicator"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="control-list-item">
+                                        <a href="#" class="control-link flex">
+                                            <div class="list-item-logo-container">
+                                                <div class="list-item-logo flex">
+                                                    <div class="list-item-logo-svg flex">
+                                                        <div class="product-logo-container">
+                                                            <img class="product-logo" src="assets/images/siemens-logo.avif" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="caurousel-control-indicator"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="control-list-item">
+                                        <a href="#" class="control-link flex">
+                                            <div class="list-item-logo-container">
+                                                <div class="list-item-logo flex">
+                                                    <div class="list-item-logo-svg flex">
+                                                        <div class="product-logo-container">
+                                                            <img class="product-logo" src="assets/images/heineken-logo.avif" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="caurousel-control-indicator"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="card-button-container flex">
@@ -1271,7 +1357,7 @@
                     </div>
                 </div>
                 <div class="footer-section-2 flex">
-                    <a class="globe-link link" href="#">"English (United States)"</a>
+                    <a class="globe-link link" href="#">English (United States)</a>
                     <a class="privacy-link link flex" href="#">
                         <img class="privacy-svg"src="assets/svgs/footer-svg.svg" alt="">
                         <span>Your Privacy Choices</span>
@@ -1312,7 +1398,26 @@
                     </nav>
                 </div>
             </footer>
-            <div class="bottom-blank-space"></div>
+            <!-- -------------------ai-chat-button--------------------- -->
+            <div class="bottom-blank-space">
+                <div class="ai-chat-button flex">
+                    <div class="ai-svg-icon-container">
+                        <div class="ai-svg-icon flex">
+                            <img class="ai-icon" src="assets/images/ai-button-icon.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="ai-chat-button-text-container flex">
+                        <span class="ai-chat-button-text">
+                            AI-powered assistant
+                        </span>
+                    </div>
+                    <a href="#" class="add-button-link flex">
+                        <div class="add-button-link-container flex">
+                            <span class="add-button-glyph flex"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
     </main>
 </body>
 </html>
