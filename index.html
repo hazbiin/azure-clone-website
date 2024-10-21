@@ -31,7 +31,6 @@
                             <li class="header-nav-item">
                                 <a href="#">Home</a>
                             </li>
-    
                             <li class="header-nav-item">
                                 <div class="nested-nav-item">
                                     <button class="nested-nav-item-button">
@@ -74,7 +73,6 @@
                                     </button>
                                 </div>
                             </li>
-
                             <li class="header-nav-item">
                                 <a href="#">Learn</a>
                             </li>
@@ -155,7 +153,9 @@
                 </nav>
                 <div class="sign-in-header-section flex">
                     <form class="sign-in-form">
+                        
                         <button class="search-button">
+                            <!-- <span class="search-text">Search</span> -->
                         </button>
                     </form>
                     <nav class="desktop-header-navbar">
@@ -195,81 +195,90 @@
             </div>
             <div class="main-banner-content-container container">
                 <div class="main-content-container flex">
-                    <div class="main-content">
-                        <div class="AZURE">
-                            AZURE. LIMITLESS INNOVATION.
-                        </div>
-                        <div class="main-banner-title">
-                            <h1>The best ideas need the best AI platform</h1>
-                        </div>
-                        <div class="main-banner-description">
-                            Rely on a flexible, industry-leading platform to build the AI apps you dream up. Pay as you go or try Azure free for up to 30 days. There’s no upfront commitment—cancel anytime.
-                        </div>
-                        <div class="main-button-wrapper flex">
-                            <div class="main-banner-button-container">
-                                <div class="main-banner-button">
-                                    <a href="#">
-                                        <span class="main-button-text">
-                                            Get started with Azure
-                                        </span>
-                                    </a>
+                    <div class="main-content-wrapper flex">
+                        <div class="main-content">
+                            <div class="AZURE">
+                                AZURE. LIMITLESS INNOVATION.
+                            </div>
+                            <div class="main-banner-title">
+                                <h1>The best ideas need the best AI platform</h1>
+                            </div>
+                            <div class="main-banner-description">
+                                Rely on a flexible, industry-leading platform to build the AI apps you dream up. Pay as you go or try Azure free for up to 30 days. There’s no upfront commitment—cancel anytime.
+                            </div>
+                            <div class="main-button-wrapper flex">
+                                <div class="main-banner-button-container">
+                                    <div class="main-banner-button">
+                                        <a href="#">
+                                            <span class="main-button-text">
+                                                Get started with Azure
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main-banner-button-container">
+                                    <div class="main-banner-button">
+                                        <a href="#">
+                                            <span class="main-button-text">
+                                                Explore Azure AI
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="main-banner-button-container">
-                                <div class="main-banner-button">
-                                    <a href="#">
-                                        <span class="main-button-text">
-                                            Explore Azure AI
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
+                        <div class="blank-area"></div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- ---------------------ai chat banner -------------------- -->
-        <div class="ai-chat-banner container">
-            <div class="ai-chat-banner-container flex">
-                <div class="ai-description-section flex">
-                    <div class="ai-svg-container">
-                        <div class="ai-svg">
-                            <img src="assets/svgs/AI-icon-white.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="ai-description-container flex">
-                        <div class="ai-title">
-                            <h2>AI-powered assistant</h2>
-                        </div>
-                        <div class="ai-description">
-                            <p>Need help finding a product or solution? Try the AI-powered assistant.</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="ai-search-form flex">
-                    <div class="search-input-box-container flex">
-                        <div class="search-input-box flex">
-                            <input type="text" class="input" placeholder="Ask a question about Azure.">
-                            <button class="ai-search-button flex">
-                                <div class="search-svg-container">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" alt=""> 
-                                        <path fill="#004275" d="M5.69362 11.9997L2.29933 3.2715C2.0631 2.66403 2.65544 2.08309 3.2414 2.28959L3.33375 2.32885L21.3337 11.3288C21.852 11.588 21.8844 12.2975 21.4309 12.6129L21.3337 12.6705L3.33375 21.6705C2.75077 21.962 2.11746 21.426 2.2688 20.8234L2.29933 20.7278L5.69362 11.9997L2.29933 3.2715L5.69362 11.9997ZM4.4021 4.54007L7.01109 11.2491L13.6387 11.2497C14.0184 11.2497 14.3322 11.5318 14.3818 11.8979L14.3887 11.9997C14.3887 12.3794 14.1065 12.6932 13.7404 12.7428L13.6387 12.7497L7.01109 12.7491L4.4021 19.4593L19.3213 11.9997L4.4021 4.54007Z"></path>
-                                    </svg>
+        <div class="ai-chat-banner-outer-wrapper">
+            <div class="ai-chat-banner container">
+                <div class="ai-chat-banner-container flex">
+                    <div class="ai-description-wrapper">
+                        <div class="ai-description-section flex">
+                            <div class="ai-svg-container">
+                                <div class="ai-svg">
+                                    <div class="ai-svg-wrapper">
+                                        <img src="assets/svgs/AI-icon-white.svg" alt="">
+                                    </div>
                                 </div>
-                            </button>
+                            </div>
+                            <div class="ai-description-container flex">
+                                <div class="ai-title">
+                                    <h2>AI-powered assistant</h2>
+                                </div>
+                                <div class="ai-description">
+                                    <p>Need help finding a product or solution? Try the AI-powered assistant.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="input-highlighter"></div>
                     </div>
-                    <ul class="ai-chat-banner-tags flex">
-                        <li class="tag-item">
-                            <button class="tag-button">How will Azure AI help my business?</button>
-                        </li>
-                        <li class="tag-item">
-                            <button class="tag-button">How can I try Azure?</button>
-                        </li>
-                    </ul>
-                </form>
+                    <form class="ai-search-form flex">
+                        <div class="search-input-box-container flex">
+                            <div class="search-input-box flex">
+                                <input type="text" class="input" placeholder="Ask a question about Azure.">
+                                <button class="ai-search-button flex">
+                                    <div class="search-svg-container">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" alt=""> 
+                                            <path fill="#004275" d="M5.69362 11.9997L2.29933 3.2715C2.0631 2.66403 2.65544 2.08309 3.2414 2.28959L3.33375 2.32885L21.3337 11.3288C21.852 11.588 21.8844 12.2975 21.4309 12.6129L21.3337 12.6705L3.33375 21.6705C2.75077 21.962 2.11746 21.426 2.2688 20.8234L2.29933 20.7278L5.69362 11.9997L2.29933 3.2715L5.69362 11.9997ZM4.4021 4.54007L7.01109 11.2491L13.6387 11.2497C14.0184 11.2497 14.3322 11.5318 14.3818 11.8979L14.3887 11.9997C14.3887 12.3794 14.1065 12.6932 13.7404 12.7428L13.6387 12.7497L7.01109 12.7491L4.4021 19.4593L19.3213 11.9997L4.4021 4.54007Z"></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="input-highlighter"></div>
+                        </div>
+                        <ul class="ai-chat-banner-tags flex">
+                            <li class="tag-item">
+                                <button class="tag-button">How will Azure AI help my business?</button>
+                            </li>
+                            <li class="tag-item">
+                                <button class="tag-button">How can I try Azure?</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
             </div>
         </div>
         <!-- ---------------- sticky header navbar ------------------ -->
@@ -294,50 +303,68 @@
             <div class="nav-item-indicator"></div>
         </div>
         <!-- -------------------large screen header ------------------------  -->
-        <!-- <div class="sticky-navbar-container-2 flex">
+        <div class="sticky-navbar-container-2 flex">
             <div class="secondary-nav">
-                <nav class="sticky-nav-2">
-                    <div class="section-scrollbar-container">
-                        <div class="section-scrollbar flex">
-                            <button class="scroll-button">
-                                <span class="scroll-button-text">
-                                    Featured solutions
-                                </span>
-                            </button>
-                            <button class="scroll-button">
-                                <span class="scroll-button-text">
-                                    Cloud migration
-                                </span>
-                            </button>
-                            <button class="scroll-button">
-                                <span class="scroll-button-text">
-                                    Data transformation
-                                </span>
-                            </button>
-                            <button class="scroll-button">
-                                <span class="scroll-button-text">
-                                    App development
-                                </span>
-                            </button>
-                            <button class="scroll-button">
-                                <span class="scroll-button-text">
-                                    AI
-                                </span>
-                            </button>
+                <nav class="sticky-nav-2 flex">
+                   <div class="drop-down-container flex">
+                        <div class="drop-down">
+                            <div class="slider-overflow">
+                                <ul class="slider flex">
+                                    <li>
+                                        <a href="#" class="header-link">
+                                            <span class="header-list-text">Featured news</span>
+                                            <div class="header-indicator"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header-link">
+                                            <span class="header-list-text">Solutions</span>
+                                            <div class="header-indicator"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header-link">
+                                            <span class="header-list-text">Products and services</span>
+                                            <div class="header-indicator"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header-link">
+                                            <span class="header-list-text">Resources by role</span>
+                                            <div class="header-indicator"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header-link">
+                                            <span class="header-list-text">Customer stories</span>
+                                            <div class="header-indicator"></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                            <div class="right-arrow-abs">
+
+                            </div>
                         </div>
-                    </div>
-                    <div class="main-banner-button-container">
-                        <div class="main-banner-button">
-                            <a href="#">
-                                <span class="main-button-text">
-                                    Get started with Azure
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+                   </div>
+                   <div class="header-button-container flex">
+                        <a href="#" class="header-button">
+                            <span class="header-button-text">Get started with Azure</span>
+                        </a>
+                   </div>
                 </nav>
             </div>
-        </div> -->
+        </div>
 
 
 
@@ -483,84 +510,86 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section-list-container flex">
-                            <ul class="section-list">
-                                <li class="section-list-item flex">
-                                    <span class="selected-indicator"></span>
-                                    <div class="list-item-container">
-                                        <button class="selected-button flex">
-                                            <h3 class="list-text">AI</h3>
-                                        </button>
-                                        <div class="selected-item-content flex">
-                                            <div class="selected-item-description">
-                                                Build intelligent apps at enterprise scale with the Azure AI portfolio.
-                                            </div>
-                                            <div class="selected-item-image-section">
-                                                <!-- <div class="selected-item-link-container"> -->
-                                                    <a class="selected-item-link" href="#">
-                                                        <span class="selected-item-link-text">
-                                                            Explore Azure AI solutions
-                                                        </span>
-                                                    </a>
-                                                <!-- </div> -->
-                                                <div class="selected-item-image-container flex">
-                                                    <div class="selected-item-image">
-                                                        <picture>
-                                                            <source srcset="assets/images/section-2-list-image-1400.avif" media="(min-width:1400px)">
-                                                            <source srcset="assets/images/section-2-list-image-1084.avif" media="(min-width:1084px)">
+                        <div class="section-list-wrapper ">
+                            <div class="section-list-container flex">
+                                <ul class="section-list">
+                                    <li class="section-list-item flex">
+                                        <span class="selected-indicator"></span>
+                                        <div class="list-item-container">
+                                            <button class="selected-button flex">
+                                                <h3 class="list-text">AI</h3>
+                                            </button>
+                                            <div class="selected-item-content flex">
+                                                <div class="selected-item-description">
+                                                    Build intelligent apps at enterprise scale with the Azure AI portfolio.
+                                                </div>
+                                                <div class="selected-item-image-section">
+                                                    <!-- <div class="selected-item-link-container"> -->
+                                                        <a class="selected-item-link" href="#">
+                                                            <span class="selected-item-link-text">
+                                                                Explore Azure AI solutions
+                                                            </span>
+                                                        </a>
+                                                    <!-- </div> -->
+                                                    <div class="selected-item-image-container flex">
+                                                        <div class="selected-item-image">
+                                                            <picture>
+                                                                <source srcset="assets/images/section-2-list-image-1400.avif" media="(min-width:1400px)">
+                                                                <source srcset="assets/images/section-2-list-image-1084.avif" media="(min-width:1084px)">
+                                                                <source srcset="assets/images/section-2-list-image-860.avif" media="(min-width:860px)">
+                                                                <source srcset="assets/images/section-2-list-image-540.avif" media="(min-width:540px)">
+                                                                <img  class="selected-image" src="assets/images/section-2-list-image.avif" alt="pic">
+                                                            </picture>
+                                                        </div>
+                                                        <!-- <picture>
                                                             <source srcset="assets/images/section-2-list-image-860.avif" media="(min-width:860px)">
                                                             <source srcset="assets/images/section-2-list-image-540.avif" media="(min-width:540px)">
                                                             <img  class="selected-image" src="assets/images/section-2-list-image.avif" alt="pic">
-                                                        </picture>
-                                                    </div>
-                                                    <!-- <picture>
-                                                        <source srcset="assets/images/section-2-list-image-860.avif" media="(min-width:860px)">
-                                                        <source srcset="assets/images/section-2-list-image-540.avif" media="(min-width:540px)">
-                                                        <img  class="selected-image" src="assets/images/section-2-list-image.avif" alt="pic">
-                                                    </picture> -->
-                                                    <div class="play-button-container">
-                                                        <a class="play-button" href="#">
-                                                            <span class="play-icon"></span>
-                                                        </a>
+                                                        </picture> -->
+                                                        <div class="play-button-container">
+                                                            <a class="play-button" href="#">
+                                                                <span class="play-icon"></span>
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="section-list-item">
-                                    <span class="selected-indicator"></span>
-                                    <div class="list-item-container">
-                                        <button class="selected-button flex">
-                                            <h3 class="list-text">Responsible AI with Azure</h3>
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="section-list-item">
-                                    <span class="selected-indicator"></span>
-                                    <div class="list-item-container">
-                                        <button class="selected-button flex">
-                                            <h3 class="list-text">Build and modernize intelligent apps</h3>
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="section-list-item">
-                                    <span class="selected-indicator"></span>
-                                    <div class="list-item-container">
-                                        <button class="selected-button flex">
-                                            <h3 class="list-text">Machine learning operations</h3>
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="section-list-item">
-                                    <span class="selected-indicator"></span>
-                                    <div class="list-item-container">
-                                        <button class="selected-button flex">
-                                            <h3 class="list-text">Azure AI infrastructure</h3>
-                                        </button>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                    <li class="section-list-item">
+                                        <span class="selected-indicator"></span>
+                                        <div class="list-item-container">
+                                            <button class="selected-button flex">
+                                                <h3 class="list-text">Responsible AI with Azure</h3>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="section-list-item">
+                                        <span class="selected-indicator"></span>
+                                        <div class="list-item-container">
+                                            <button class="selected-button flex">
+                                                <h3 class="list-text">Build and modernize intelligent apps</h3>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="section-list-item">
+                                        <span class="selected-indicator"></span>
+                                        <div class="list-item-container">
+                                            <button class="selected-button flex">
+                                                <h3 class="list-text">Machine learning operations</h3>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="section-list-item">
+                                        <span class="selected-indicator"></span>
+                                        <div class="list-item-container">
+                                            <button class="selected-button flex">
+                                                <h3 class="list-text">Azure AI infrastructure</h3>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="card-button-container flex">
                             <a class="card-button-wrapper flex " href="#">
@@ -660,9 +689,12 @@
                                 <div class="small-card">
                                     <div class="small-card-content flex">
                                         <div class="card-head flex">
-                                            <div class="card-icon-container flex">
-                                                <img class="card-logo" src="assets/images/card-logo-1.svg" alt="">
-                                            </div>
+                                            <!-- <div class="border-div"> -->
+                                                <div class="card-icon-container flex">
+                                                    <img class="card-logo" src="assets/images/card-logo-1.svg" alt="">
+                                                </div>
+                                            <!-- </div> -->
+                                           
                                             <h6 class="small-card-title">Azure OpenAI Service</h6>
                                             <div class="small-card-subtitle">
                                                 Build your own copilot and generative AI applications.
@@ -875,16 +907,22 @@
                                         </span>
                                     </button>
                                 </div>
+                              <!-- 
+                                <div class="right-button-container">
+                                    <div class="arrow-button-container-1">
+                                        <div class="right-button-container">
+                                        <button class="mobile-arrow-button"></button>
+                                        <button class="mobile-arrow-button mobile-arrow-button-right"></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                -->
                             </div>
                             <div class="arrow-button-container">
                                 <button class="mobile-arrow-button"></button>
                                 <button class="mobile-arrow-button mobile-arrow-button-right"></button>
                             </div>
-                            <!-- <div class="right-button-container">
-                                <div class="right-button-wrapper">
-                                    <button class="right-button"></button>
-                                </div>
-                            </div> -->
                         </div>
                         <div class="section-content">
                             <div class="section-6-description-section">
@@ -1177,39 +1215,44 @@
                 <div class="section-10-content-container container">
                     <div class="section-content-container flex">
                         <div class="section-content flex">
-                            <div class="azure-app-download-section">
-                                <a class="azure-app-download-link flex" href="#">
-                                    <span>
-                                        <img class="azure-svg-image" src="assets/svgs/azure-svg.svg" alt="">
-                                    </span>
-                                    Get the Azure mobile app
-                                </a>
+                            <div class="social-media-container">
+                                <div class="azure-app-download-section">
+                                    <a class="azure-app-download-link flex" href="#">
+                                        <span>
+                                            <img class="azure-svg-image" src="assets/svgs/azure-svg.svg" alt="">
+                                        </span>
+                                        Get the Azure mobile app
+                                    </a>
+                                </div>
+                                <div class="social-media-section">
+                                    <ul class="social-media-icons">
+                                        <li class="social-media-icon">
+                                            <a href="#">
+                                                <img class="icon" src="assets/images/x-icon.webp" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="social-media-icon">
+                                            <a href="#">
+                                                <img class="icon" src="assets/svgs/instagram-svg.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="social-media-icon">
+                                            <a href="#">
+                                                <img class="icon" src="assets/svgs/linkedin-svg.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="social-media-icon">
+                                            <a href="#">
+                                                <img class="icon" src="assets/svgs/youtube-svg.svg" alt="">
+                                            </a>
+                                        </li>
+                                      
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="social-media-section">
-                                <ul class="social-media-icons">
-                                    <li class="social-media-icon">
-                                        <a href="#">
-                                            <img class="icon" src="assets/svgs/x-svg.svg" alt="">
-                                        </a>
-                                    </li>
-                                    <li class="social-media-icon">
-                                        <a href="#">
-                                            <img class="icon" src="assets/svgs/instagram-svg.svg" alt="">
-                                        </a>
-                                    </li>
-                                    <li class="social-media-icon">
-                                        <a href="#">
-                                            <img class="icon" src="assets/svgs/linkedin-svg.svg" alt="">
-                                        </a>
-                                    </li>
-                                    <li class="social-media-icon">
-                                        <a href="#">
-                                            <img class="icon" src="assets/svgs/youtube-svg.svg" alt="">
-                                        </a>
-                                    </li>
-                                  
-                                </ul>
-                            </div>
+                            
+
+
                         </div>
                     </div>
                 </div>
@@ -1242,7 +1285,7 @@
                                 <a class="footer-list-link" href="#">Azure Essentials</a>
                             </li>
                             <li class="footer-list-item">
-                                <a class="footer-list-link" href="#">Azure Customer stories</a>
+                                <a class="footer-list-link" href="#">Customer stories</a>
                             </li>
                         </ul>
                    </div>
@@ -1283,7 +1326,7 @@
                                 <a class="footer-list-link" href="#">Resources for accelerating growth</a>
                             </li>
                             <li class="footer-list-item">
-                                <a class="footer-list-link" href="#">Solutions architectures</a>
+                                <a class="footer-list-link" href="#">Solution architectures</a>
                             </li>
                             <li class="footer-list-item">
                                 <a class="footer-list-link" href="#">Support</a>
@@ -1330,10 +1373,10 @@
                                 <a class="footer-list-link" href="#">Students</a>
                             </li>
                             <li class="footer-list-item">
-                                <a class="footer-list-link" href="#">Event snd Webinars</a>
+                                <a class="footer-list-link" href="#">Events and Webinars</a>
                             </li>
                             <li class="footer-list-item">
-                                <a class="footer-list-link" href="#">Aanalyst reports,white papers, and e-books</a>
+                                <a class="footer-list-link" href="#">Analyst reports, white papers, and e-books</a>
                             </li>
                             <li class="footer-list-item">
                                 <a class="footer-list-link" href="#">Videos</a>
@@ -1346,13 +1389,13 @@
                         </div>
                         <ul class="footer-list">
                             <li class="footer-list-item">
-                                <a class="footer-list-link" href="#">What is Cloud computing?</a>
+                                <a class="footer-list-link" href="#">What is cloud computing?</a>
                             </li>
                             <li class="footer-list-item">
-                                <a class="footer-list-link" href="#">What is Cloud migration?</a>
+                                <a class="footer-list-link" href="#">What is cloud migration?</a>
                             </li>
                             <li class="footer-list-item">
-                                <a class="footer-list-link" href="#">What is hybrid cloud?</a>
+                                <a class="footer-list-link" href="#">What is a hybrid cloud?</a>
                             </li>
                             <li class="footer-list-item">
                                 <a class="footer-list-link" href="#">What is AI?</a>
@@ -1372,15 +1415,20 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footer-section-2 flex">
-                    <a class="globe-link link" href="#">English (United States)</a>
-                    <a class="privacy-link link flex" href="#">
-                        <img class="privacy-svg"src="assets/svgs/footer-svg.svg" alt="">
-                        <span>Your Privacy Choices</span>
-                    </a>
-                    <a class="health-link link flex" href="#">
-                        <span>Consumer Health Privacy</span>
-                    </a>
+                <div class="footer-section-2">
+                    <!-- <div class="globe-link-container"> -->
+                      
+                        <!-- <div class="footer-links-container"> -->
+                            <a class="globe-link link" href="#">English (United States)</a>
+                            <a class="privacy-link link flex" href="#">
+                                <img class="privacy-svg"src="assets/svgs/footer-svg.svg" alt="">
+                                <span>Your Privacy Choices</span>
+                            </a>
+                            <a class="health-link link flex" href="#">
+                                <span>Consumer Health Privacy</span>
+                            </a>
+                        <!-- </div> -->
+                    <!-- </div> -->
                     <nav class="footer-navbar">
                         <ul>
                             <li>
