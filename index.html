@@ -16,7 +16,6 @@
         <div class="header-container">
             <div class="header flex">
                 <button class="menu-button">
-                    
                 </button>
                 <a class="microsoftlogo-container" href="#">
                     <img src="assets/images/microsoftlogo.png" alt="">
@@ -100,12 +99,10 @@
                 </div>
                 <nav class="header-navbar">
                     <ul class="header-nav-items">
-                        <li class="header-nav-item">
-                            <div class="nested-nav-item">
-                                <button class="nested-nav-item-button">
-                                    Explore
-                                </button>
-                            </div>
+                        <li class="single-link-container">
+                            <a href="#" class="single-link">
+                                Explore
+                            </a>
                         </li>
                         <li class="header-nav-item">
                             <div class="nested-nav-item">
@@ -142,6 +139,29 @@
                                 </button>
                             </div>
                         </li>
+
+                        <!-- <li class="single-link-container ">
+                            <a href="#" class="single-link">
+                                Learn
+                            </a>
+                        </li>
+                        <li class="single-link-container hey">
+                            <a href="#" class="single-link">
+                                Support
+                            </a>
+                        </li>
+                        <li class="single-link-container hey">
+                            <a href="#" class="single-link">
+                                Contact Sales
+                            </a>
+                        </li>
+                        <li class="desktop-header-navbar-item">
+                            <a class="navbar-item-button" href="#">Get started with Azure</a>
+                        </li>
+                        <li class="desktop-header-navbar-item">
+                            <a class="navbar-item-button" href="#">Sign in</a>
+                        </li> -->
+
                         <li class="header-nav-item">
                             <div class="nested-nav-item">
                                 <button class="nested-nav-item-button">
@@ -152,10 +172,20 @@
                     </ul>
                 </nav>
                 <div class="sign-in-header-section flex">
+                    <!-- <nav class="desktop-header-navbar">
+                        <ul class="desktop-header-navbar-items">
+                            <li class="header-nav-item">
+                                <div class="nested-nav-item">
+                                    <button class="nested-nav-item-button">
+                                        All Microsoft
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav> -->
                     <form class="sign-in-form">
-                        
                         <button class="search-button">
-                            <!-- <span class="search-text">Search</span> -->
+                            <span class="search-text">Search</span>
                         </button>
                     </form>
                     <nav class="desktop-header-navbar">
@@ -305,55 +335,47 @@
         <!-- -------------------large screen header ------------------------  -->
         <div class="sticky-navbar-container-2 flex">
             <div class="secondary-nav">
-                <nav class="sticky-nav-2 flex">
+                <nav class="sticky-nav-2 flex container">
                    <div class="drop-down-container flex">
                         <div class="drop-down">
                             <div class="slider-overflow">
                                 <ul class="slider flex">
-                                    <li>
+                                    <li class="slider-list-item">
                                         <a href="#" class="header-link">
-                                            <span class="header-list-text">Featured news</span>
+                                            <div class="header-list-text">Featured news</div>
                                             <div class="header-indicator"></div>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="header-link">
-                                            <span class="header-list-text">Solutions</span>
+                                    <li class="slider-list-item">
+                                        <a href="#section-3" class="header-link">
+                                            <div class="header-list-text">Solutions</div>
                                             <div class="header-indicator"></div>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="slider-list-item">
                                         <a href="#" class="header-link">
-                                            <span class="header-list-text">Products and services</span>
+                                            <div class="header-list-text">Products and services</div>
                                             <div class="header-indicator"></div>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="slider-list-item">
                                         <a href="#" class="header-link">
-                                            <span class="header-list-text">Resources by role</span>
+                                            <div class="header-list-text">Resources by role</div>
                                             <div class="header-indicator"></div>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="slider-list-item">
                                         <a href="#" class="header-link">
-                                            <span class="header-list-text">Customer stories</span>
+                                            <div class="header-list-text">Customer stories</div>
                                             <div class="header-indicator"></div>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
-
-
-
-
-
-
-
-
-
-
-                            <div class="right-arrow-abs">
-
+                            <div class="right-button-container">
+                                <div class="right-button-wrapper">
+                                    <button class="right-button"></button>
+                                </div>
                             </div>
                         </div>
                    </div>
@@ -365,10 +387,6 @@
                 </nav>
             </div>
         </div>
-
-
-
-
         <!-- ------------------- section-2 --------------------------- -->
         <section>
             <div class="section-2">
@@ -462,7 +480,7 @@
             </div>
         </section>
         <!-- --------------------section-3 ------------------------- -->
-        <section>
+        <section id="section-3">
             <div class="section-3">
                 <div class="section-3-content-container container">
                     <div class="section-head flex">
