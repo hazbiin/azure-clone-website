@@ -245,6 +245,14 @@ header{
     display: inline-block;
     vertical-align: baseline;
 }
+
+.sign-in-header-section .desktop-header-navbar .desktop-header-navbar-items {
+    display: none;
+}
+.search-text {
+    display: none;
+}
+
 /* ------------ section-1 ----------------- */
 
 .section-1{
@@ -424,6 +432,9 @@ header{
     width: 100%;
     height: 4px;
     background-color: #004275;
+}
+.sticky-navbar-container-2{
+    display: none;
 }
 /* -------------------section-2---------------- */
 /* .section-2{
@@ -1296,9 +1307,30 @@ header{
     flex-direction: column;
     gap: 24px;
 }
+.carousels-main-content-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+/* .carousels-content-container{
+} */
+.carousels-main-container{
+    margin-bottom: 81px;
+    /* scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    scroll-behavior: smooth; */
+}
 .carousels-container{
-    /* margin-bottom: 81px; */
-    margin-bottom: 82px;
+    overflow-x: scroll;
+    column-gap: 12px;
+    row-gap: 8px;
+    flex-wrap: nowrap;
+    width: auto;
+    /* margin: auto;
+    white-space: nowrap; */
+}
+.carousels-container::-webkit-scrollbar{
+    display: none;
 }
 .carousel-container{
     padding: 3px;
@@ -1317,8 +1349,14 @@ header{
     flex-wrap: wrap;
 }
 
-
 /* -------------------image isuue -------------- */
+/* .carousel-image-section{
+    padding: 8px 8px 0px;
+}
+.carousel-image-wrapper{
+    display: flex;
+} */
+
 .carousel-image-container{
     padding: 8px 8px 0px;
     /* flex:  0 0 100%; */
@@ -1336,8 +1374,6 @@ header{
     vertical-align: middle;
 }
 /* -------------------image isuue -------------- */
-
-/* ------------------flex end isuue ---------------- */
 .carousel-content-container{
     padding: 16px;
     flex-direction: column;
@@ -1383,7 +1419,6 @@ header{
     flex-direction: column;
     justify-content: flex-end;
 }
-/* ------------------flex end isuue ---------------- */
 .carousel-product-link-section{
     flex-direction: column;
     gap: 0.5rem;
@@ -1409,17 +1444,32 @@ header{
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-basis: auto;
+
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 24px;
 }
 .card-link-list-item{
-    line-height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 24px;
 }
 .section-8 .card-links .card-link{
     gap: 0.5rem;
     align-items: center;
-    line-height: 24px;
+    /* line-height: 24px; */
+    padding-bottom: unset;
+}
+.card-link-svg-icon{
+    font-size: 16px;
+    font-weight: 400;
+    height :25.6px;
+    letter-spacing: -0.48px;
+    line-height :24px;
 }
 .card-link-icon-container{
-    font-size: 20px;
     height: 20px;
     max-height: 20px;
     width: 16px;
@@ -1427,6 +1477,10 @@ header{
     text-wrap: wrap;
     text-align: left;
     white-space-collapse: collapse;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 24px;
 }
 .width-20{
     width: 20px;
@@ -1442,14 +1496,14 @@ header{
 .card-link-text{
     color: #0067b8;
     text-decoration: underline;
-    font-weight: 500;
-    font-size: 0.875rem;
-    /* line-height: 1.25rem; */
+    font-size: 14px;
+    font-weight: 600;
     letter-spacing: -0.48px;
+    line-height: 20px;
 }
-.carousels-content-container{
+/* .carousels-content-container{
     position: relative;
-}
+} */
 .carousel-controls{
     margin:auto;
     position:absolute;
@@ -2041,7 +2095,10 @@ footer{
         height: unset;
         font-size: 13px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        /* margin-right: -10px; */
+        margin-right: -10px;
+        width: unset;
+        max-width: unset;
+        appearance: button;
     }
     .nested-nav-item-button:after{
         font-size: 8px;
@@ -2357,6 +2414,7 @@ footer{
         display: none;
     }
     .sticky-navbar-container-2{
+        display: block;
         flex-direction: column;
         justify-content: flex-end;
         position: sticky;
@@ -2478,62 +2536,6 @@ footer{
     .slider .slider-list-item:last-child{
         padding-right: 4px;
     }
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     /* -----------------section-2----------------- */
@@ -2788,6 +2790,7 @@ footer{
     }
     .section-5-content{
         margin-top: 32px;
+        margin-left: -8px;
     }
     .col{
         flex-basis: 0;
@@ -2928,6 +2931,7 @@ footer{
         width: unset;
         align-items: center;
         margin-bottom: 32px;
+        flex: unset;
     }
     .section-7 .main-banner-description{
         padding-left: 48px;
@@ -2971,7 +2975,7 @@ footer{
     .section-8 .carousel-controls{
         display: none;
     }
-    .carousels-container{
+    .carousels-main-container{
         margin-bottom: 136px;
     }
     /* -------------- large-screen carousel controls ------------ */
@@ -3444,11 +3448,26 @@ footer{
         background-position: center;
         background-size: cover;
     }
+    .gartner{
+        box-sizing: border-box;
+    }
+    .section-5 .card-content-container{
+        box-sizing: border-box;
+    }
     /* --------------------section-6------------------ */
     .section-6 .card-button-container{
         margin-top: unset;
     }
     /* ----------------section-7---------------- */
+
+    /* ----------------section-8----------------- */
+    .carousel-image-container{
+        box-sizing: border-box;
+    }
+    .carousel-content-container{
+        box-sizing: border-box;
+    }
+
     /* -----------------section-9---------------- */
     .section-9{
         background-image: url(assets/images/section-9-bg-1084.png);
@@ -3709,9 +3728,9 @@ footer{
     .section-5 .card-content-container{
         padding-right: 72px;
     }
-    .section-5 .card-content-container{
-        /* width: 555.200px; */
-    }
+    /* .section-5 .card-content-container{
+        width: 555.200px;
+    } */
     .section-5 .card-title{
         font-size: 32px;
         line-height: 40px;
@@ -3721,6 +3740,26 @@ footer{
         font-size: 20px;
         line-height: 32px;
         letter-spacing: -0.6px;
+    }
+    /* -----------section-6---------------- */
+    .section-7 .main-banner-content-container {
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+    /* ---------section-7------------------ */
+
+    
+    /* ------------section-8----------------- */
+    .carousel-description{
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -1.2px;
+    }
+    .carousel-content-container{
+        padding-right: 72px;
+    }
+    .carousels-main-container{
+        margin-bottom: 158px;
     }
     /* --------------------section-9------------------ */
     .section-9{
