@@ -364,55 +364,58 @@ header{
 }
 
 /* ------------sticky header navbar------------ */
+
 .sticky-navbar-container{
-    height: 60px;
-    background-color: #fefefe;
-    box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.25rem 0.5rem rgba(0, 0, 0, 0.14);
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-self: flex-start;
+   height: 60px;
+   background-color: #fefefe;
+   box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.25rem 0.5rem rgba(0, 0, 0, 0.14);
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   color: #17253d;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-align: left;
 }
 .sticky-nav{
     flex-direction: column;
+    /* align-items: center; */
+    flex-grow: 1;
 }
 .dropdown-container{
     flex-grow: 1;
     margin: 4px;
 }
 .dropdown{
-    align-items: center;
-    gap:0.5rem;
-    padding: 12px;
-    width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    color: #004275;
+    margin: 4px;
+    flex-grow: 1;
+    overflow: visible;
 }
-/* .dropdown a{
+.dropdown-link{
+    display: block;
+    width: 100%;
     text-decoration: none;
-    flex-grow: 1;
-    font-size: 0.875rem;
-    font-weight: 600;
-    line-height: 1.25rem;
-    letter-spacing: -0.48px;
-    color: #004275;
-} */
-/* .dropdown-item-label{
-    width: 100%;
+    /* appearance:button;
+    -webkit-appearance: button; */
+}
+.label-link-container{
+    padding: 12px;
+    align-items: center;
+    gap: 8px;
+}
+.label-link{
     flex-direction: column;
-    align-items: flex-start;
-} */
-.dropdown-item-label {
-    /* text-decoration: none; */
-    /* color: #004275; */
     flex-grow: 1;
-    font-size: 0.875rem;
+}
+.label-link-text{
+    font-size: 14px;
     font-weight: 600;
-    line-height: 1.25rem;
     letter-spacing: -0.48px;
-    width: 100%;
+    line-height: 20px;
+    /* color: #004275; */
+    color: #17253d;
 }
 .down-arrow{
     align-items: center;
@@ -426,7 +429,8 @@ header{
     font-weight: 400;
     line-height: 16px;
     font-size: 1rem;
-    color: #0078d4;
+    /* color: #0078d4; */
+    color: #17253d;
 }
 .nav-item-indicator{
     width: 100%;
@@ -437,30 +441,6 @@ header{
     display: none;
 }
 /* -------------------section-2---------------- */
-/* .section-2{
-    background-color: rgba(255,255,255,0.6);
-} */
-/* .section-2-image-container{
-    position: relative;
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-} */
-/* .main-image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    vertical-align: middle;
-    overflow-x: clip;
-    overflow-y: clip;
-    overflow-clip-margin: content-box;
-} */
-.section-2{
-    /* width: 100%;
-    margin-right: auto;
-    margin-left: auto; */
-}
-
 .section-2-content-container{
     background-image: url(assets/images/section1-bg.avif);
     background-repeat: no-repeat;
@@ -470,20 +450,12 @@ header{
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    /* position: absolute;
-    top:0;
-    right: 0;
-    left: 0;
-    bottom: 0; */
 }
 .section-head{
     flex-wrap: wrap;
     margin-right: -0.25rem;
     margin-left: -0.25rem;
     padding: 0 4px;
-    /* flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%; */
 }
 .section-head-container{
     flex-basis: 0;
@@ -845,7 +817,8 @@ header{
 }
 .section-4-cards-container{
     margin-top: 32px;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     gap: 12px;
 }
 .large-card{
@@ -1369,6 +1342,10 @@ header{
 }
 
 /* ---------------- section-7 ------------------ */
+#section-7{
+    position: relative;
+    /* z-index: 3000; */
+}
 .section-7{
     background-image: url(assets/images/section-7-globe-image.avif);
     background-repeat: no-repeat;
@@ -1424,6 +1401,7 @@ header{
 /* .carousels-content-container{
 } */
 .carousels-main-container{
+    /* margin-bottom: 65px; */
     margin-bottom: 81px;
     /* scroll-snap-type: x mandatory;
     white-space: nowrap;
@@ -1446,34 +1424,38 @@ header{
     flex: 0 0 calc(calc(100% - calc(0.75rem * (1 - 1))) / 1);
 }
 .carousel{
-    flex-direction: column;
     background-color:#fefefe;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 2px 4px 0px;
     border-radius: 1rem;
     overflow: hidden;
     height: 100%;
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     min-width: 1px;
     word-wrap: break-word;
     flex-wrap: wrap;
+    white-space: normal;
 }
 
-/* -------------------image isuue -------------- */
-/* .carousel-image-section{
-    padding: 8px 8px 0px;
-}
-.carousel-image-wrapper{
-    display: flex;
-} */
 
 .carousel-image-container{
+    position: relative;
     padding: 8px 8px 0px;
-    /* flex:  0 0 100%; */
+    flex:  0 0 100%;
     max-width: 100%;
     width: 100%;
-    /* display: flex;
-    align-items: center;
-    height: 100%; */
+}
+.carousel-image-flex-wrapper{
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+.c-image-container{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
 }
 .carousel-image{
     width: 100%;
@@ -1482,7 +1464,6 @@ header{
     border-radius: 0.5rem;
     vertical-align: middle;
 }
-/* -------------------image isuue -------------- */
 .carousel-content-container{
     padding: 16px;
     flex-direction: column;
@@ -1498,7 +1479,6 @@ header{
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-    /* height: 100%; */
 }
 .carousel-logo-wrapper{
     display: flex;
@@ -1724,8 +1704,9 @@ header{
 .section-10-content-container{
     padding:24px 16px;
 }
-.section-content-container{
-    flex-wrap: wrap;
+.section-10 .section-content-container{
+    flex-direction: column;
+    justify-content: space-between;
 }
 .section-10 .section-content{
     margin-top: unset;
@@ -1747,6 +1728,7 @@ header{
     padding: 12px;
     margin: 8px 0px;
     border: 2px solid transparent;
+    border-radius:3.2px;
     text-decoration: none;
     align-items: center;
     justify-content: center;
@@ -1755,6 +1737,7 @@ header{
     line-height: 1.375rem;
     letter-spacing: -.02em;
     color: #000000;
+    white-space: nowrap;
 }
 .azure-svg-image{
     width: 24px;
@@ -1773,6 +1756,12 @@ header{
     margin: 8px 0px;
     vertical-align: middle;
     display: inline-block;
+    /* text-wrap: nowrap; */
+    /* width: 155.72px; */
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 24px;
 }
 .social-media-icon{
     display: inline-block;
@@ -1970,6 +1959,9 @@ footer{
         background-position: center;
         padding-left: 64px;
         padding-right: 64px;
+    }
+    .section2-content{
+        margin-left: -4px;
     }
     /* ------------------------------ */
     .section-3-content-container{
@@ -2376,6 +2368,11 @@ footer{
         padding-bottom: 12px;
         padding-right: 12px;
     }
+    .ai-description-wrapper{
+       display: flex;
+       align-items: center;
+       flex: 0 0 calc(calc(100% - calc(1rem * (2 - 1))) / 2);
+    }
     .ai-description-container{
         flex-direction: column;
         gap:4px;
@@ -2526,14 +2523,14 @@ footer{
         flex-direction: column;
         justify-content: flex-end;
         position: sticky;
-        top: -1px;
+        top: 0;
         z-index: 500;
-        height: 66px;
+        height: 65px;
         align-self: flex-start;
         box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
     }
     .secondary-nav{
-        height: 100%;
+        /* height: 100%; */
         box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.063rem 0.125rem rgba(0, 0, 0, 0.14);
         background-color: #fefefe;
     }
@@ -2541,7 +2538,7 @@ footer{
         align-items: center;
         flex-grow: 1;
         padding: 0px 56px;
-        height: 100%;
+        /* height: 100%; */
     }
     .drop-down-container{
         overflow: hidden;
@@ -3028,16 +3025,16 @@ footer{
         gap: 32px;
     }
     .carousel{
-        flex-direction: row-reverse;
         border-radius: 1.5rem;
     }
     .carousel-image-container{
         padding: 8px 8px 8px 0px;
         flex: 0 0 50%;
         max-width: 50%;
+        order: 1;
     }
     .carousel-image{
-        border-radius: 1.5rem;
+        border-radius: 1rem;
     }
     .carousel-content-container {
         padding: 24px;
@@ -3183,12 +3180,14 @@ footer{
         padding-left: 56px;
         padding-right: 56px;
     }
+    .section-10 .section-content-container{
+        flex-direction: row;
+    }
     .section-10 .section-content{
         margin-bottom: unset;
-        padding-left: 8px;
-        padding-right: 8px;
-        padding-top: unset;
-        padding-bottom: unset;
+        margin-left: unset;
+        margin-right: unset;
+        flex-direction: row;
     }
     .social-media-container{
         padding:8px 12px;
@@ -3228,7 +3227,7 @@ footer{
 
     .bottom-blank-space{
         display: block;
-        padding-bottom: 69px;
+        padding-bottom: 70px;
         background-color: #f7f7f7;
     }
     /* ------------ai-chat-button-------------- */
@@ -3483,14 +3482,6 @@ footer{
         justify-content: unset;
         flex-wrap: wrap;
     }
-    .ai-description-wrapper{
-       display: flex;
-       align-items: center;
-       flex: 0 0 calc(calc(100% - calc(1rem * (2 - 1))) / 2);
-    }
-    .ai-search-form{
-        flex: 0 0 calc(calc(100% - calc(1rem * (2 - 1))) / 2);
-    }
     /* -------------------section-2------------------ */
     .section-2{
         /* max-width: 90%;
@@ -3546,6 +3537,10 @@ footer{
     }
     .carousel-content-container{
         box-sizing: border-box;
+        flex: 1 1 auto;
+    }
+    .carousels-main-container {
+        margin-bottom: 156px;
     }
     /* -----------------section-9---------------- */
     .section-9{
@@ -3851,6 +3846,7 @@ footer{
     }
     .carousel-content-container{
         padding-right: 72px;
+        flex: 1 1 auto;
     }
     .carousels-main-container{
         margin-bottom: 158px;
@@ -3879,10 +3875,6 @@ footer{
     .section-10 .section-content{
         flex: unset;
         max-width: unset;
-        padding-left: 8px;
-        padding-right: 8px;
-        padding-top: unset;
-        padding-bottom: unset;
     }
     .social-media-container{
         padding:8px 12px;
