@@ -40,7 +40,7 @@ html, body {
     width: 100%;
 }
 
-
+/* --------------mobile-header------------- */
 header{
     margin-bottom: 34px;
     min-width: 280px;
@@ -89,7 +89,7 @@ header{
     vertical-align: baseline;
     display: inline-block;
 }
- .microsoftlogo-container{
+.microsoftlogo-container{
     padding: 12px 4px;
     margin: 1px;
     position:absolute;
@@ -819,7 +819,18 @@ header{
     margin-top: 32px;
     /* flex-direction: column; */
     flex-wrap: wrap;
-    gap: 12px;
+    row-gap: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: -4px;
+    margin-left: -4px;
+}
+.large-card-container{
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: -4px;
+    margin-right: -4px;
+    box-sizing: border-box;
 }
 .large-card{
     display: grid;
@@ -896,6 +907,11 @@ header{
 .small-cards-container{
     flex-direction: column;
     gap: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: -4px;
+    margin-right: -4px;
+    box-sizing: border-box;
 }
 .small-card{
     background-color: #fefefe;
@@ -911,13 +927,26 @@ header{
     gap: 12px;
 }
 .card-icon-container{
-    width: 3rem;
-    height: 3rem;
+    width: 48px;
+    height: 48px;
+    max-width: 48px;
+    max-height: 48px;
     background-color: #fefefe;
     border: 0.8px solid #e6f2fb;
     border-radius: 0.5rem;
     align-items: center;
     justify-content: center;
+
+
+    display: inline-flex;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    vertical-align: top;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    box-sizing: border-box;
 }
 .card-logo{
     width: 24px;
@@ -1339,6 +1368,9 @@ header{
     border-radius: 8px;
     vertical-align: middle;
     max-width: 100%;
+}
+.next-arrow-container{
+    display: none;
 }
 
 /* ---------------- section-7 ------------------ */
@@ -2143,7 +2175,8 @@ footer{
     }
     .header-navbar{
         display: initial;
-        overflow-x: visible;
+        overflow-x: auto;
+        overflow-y: visible;
         overflow: hidden;
         height: 100%;
         white-space: nowrap;
@@ -2153,6 +2186,8 @@ footer{
         position: unset;
         background: #fff;
         border-bottom: unset;
+        min-width: unset;
+
     }
     .header-nav-items{
         max-width: unset;
@@ -2826,11 +2861,19 @@ footer{
     }
     .section-4-cards-container{
         margin-top:48px;
-        gap: 16px;
+        row-gap: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-right: -8px;
+        margin-left: -8px;
     }
     .large-card-container{
         flex: 0 0 100%;
         max-width: 100%;
+        padding-left: unset;
+        padding-right: unset;
+        margin-right: unset;
+        margin-left:unset;
     }
     .large-card{
         border-radius: 1.5rem;
@@ -2856,6 +2899,10 @@ footer{
         flex-direction: row;
         gap: 1rem;
         flex-wrap: wrap;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-right: -8px;
+        margin-left: -8px;
     }
     .section-4 .small-card{
         display: flex;
@@ -2951,6 +2998,25 @@ footer{
         flex-basis: unset;
         flex-grow: unset;
     }
+    .next-arrow-container{
+        display: block;
+        position: absolute;
+        right: -0.25rem;
+        top: 0;
+        width: 20vw;
+        height: 100%;
+        margin-top: 0.5rem;
+        max-height:  calc(100% - calc(0.5rem* 2));
+        background: linear-gradient(270deg, #f4fafd  25%, rgba(242, 242, 242, 0) 100%);
+       z-index: 1;
+    }
+    .section-6 .mobile-arrow-button{
+        opacity: 1;
+        z-index: 2;
+        left: initial;
+        right:0;
+        top: calc(50% - 36px / 2);
+    }
     .section-6-content {
         padding-left: 56px;
         padding-right: 56px;
@@ -2961,9 +3027,6 @@ footer{
     .section-6-description-container{
         padding-top: 32px;
         padding-bottom: 72px;
-    }
-    .section-6 .arrow-button-container{
-        display: none;
     }
     .section-6 .heading{
         font-size: 30px;
@@ -3091,22 +3154,20 @@ footer{
         padding: 1rem;
     }
     .list-item-logo-svg{
-        aspect-ratio: 2.33333;
+        width: 100%;
         max-width: 100%;
         height: auto;
         background-color: rgba(255, 255, 255, 0.6);
     }
     .product-logo-container{
         padding: 1rem;
-        aspect-ratio: 2.33333 / 1;
         max-width: 100%;
         width: 100%;
-        height: 100%;
-        justify-content: center;
+        height: auto;
     }
     .product-logo{
         width: 100%;
-        /* height: 100%; */
+        height: 100%;
         max-width: 100%;
         object-fit: cover;
         aspect-ratio: 2.33333 / 1;
@@ -3121,9 +3182,7 @@ footer{
         width: 100%;
         height: 0.25rem;
         border-bottom-left-radius: 0.5rem;
-        position: absolute;
-        left: 0;
-        bottom: 0;
+        display: block;
         opacity: 0;
     }
     .control-list-item:first-child .caurousel-control-indicator{
@@ -3232,7 +3291,6 @@ footer{
     }
     /* ------------ai-chat-button-------------- */
     .ai-chat-button{
-
         background-color: rgba(255,255,255,0.9);
         flex-wrap: nowrap;
         align-items: center;
@@ -3248,20 +3306,25 @@ footer{
         z-index: 2000;
     }
     .ai-svg-icon-container{
-        /* margin-bottom: 0.25rem; */
-        font-size: 1.5rem;
-        max-height: 24px;
-        height: 100%;
+        margin-bottom: 4px;
         max-width: 24px;
+        max-height: 24px;
         width: 100%;
+        height: 100%;
+        display: flex;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: -0.48px;
+        line-height: 24px;
     }
     .ai-svg-icon{
-        font-size: 1.5rem;
-        max-height: 24px;
-        height: 100%;
-        max-width: 24px;
+        height: auto;
         width: 100%;
+        max-width: 100%;
         line-height: 24px;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: -0.48px;
     }
     .ai-icon{
         font-size: 1.5rem;
@@ -3273,6 +3336,7 @@ footer{
         vertical-align: middle;
         width: 24px;
         height: 24px;
+        aspect-ratio: auto;
     }
     .ai-chat-button-text-container{
         margin-left: 12px;
@@ -3287,6 +3351,7 @@ footer{
         font-size: 1.125rem;
         letter-spacing: -0.03em;
         line-height: 1.75rem;
+        color: #17253d;
     }
     .add-button-link{
         text-decoration: none;
@@ -3303,23 +3368,26 @@ footer{
         font-weight: 600;
         font-size: .9375rem;
         line-height: 1.375rem;
-        letter-spacing: -3px;
+        letter-spacing: -0.3px;
     }
     .add-button-link-container{
-        font-size:15px;
+        font-size:16px;
         font-weight:600;
-        height:15px;
         letter-spacing:-0.3px;
         line-height:22px;
     }
     .add-button-glyph{
         align-items: center;
+        font-size: 16px;
     }
     .add-button-glyph::after{
         font-family: 'MWFFluentIcons';
+        /* font-family: 'MWF-MDL2'; */
         content: "";
+        font-size: 16px;
         font-weight: 400;
-        line-height: 1;
+        line-height: 16px;
+        letter-spacing: -0.3px;
     }
 
 
@@ -3511,9 +3579,9 @@ footer{
         background-size: cover;
         background-position: center;
     }
-    .large-card-content{
+    /* .large-card-content{
         width: unset;
-    }
+    } */
     /* ------------section-5----------------------- */
     .section-5{
         background-image: url(assets/images/section-5-bg-1084.avif);
@@ -3758,30 +3826,27 @@ footer{
         background-size: cover;
         background-position: center;
     }
-    .section-4 .section-content {
-        padding-left: 16px;
-        padding-right: 16px;
-        margin-left: -16px;
-    }
     .section-4-cards-container{
-        flex-direction: row;
-        gap: unset;
-        margin-left: -8px;
-        padding-right: 16px;
+        margin-left: -16px;
+        margin-right: -16px;
     }
     .large-card-container{
         flex: 0 0 25%;
         max-width: 25%;
-        padding: 0 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-right:unset;
+        margin-left:unset;
     }
     .section-4 .small-cards-container{
         flex: 0 0 75%;
         max-width: 75%;
-        padding: 0 8px;
+        margin-right:unset;
+        margin-left:unset;
     }
-    .large-card-content{
+    /* .large-card-content{
         width: unset;
-    }
+    } */
     .large-card-title{
         font-size: 32px;
         letter-spacing: -0.6px;
@@ -3837,6 +3902,9 @@ footer{
     }
     .section-6-image-section{
         box-sizing: border-box;
+    }
+    .next-arrow-container{
+        display: none;
     }
     /* ------------section-8----------------- */
     .carousel-description{
