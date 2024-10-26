@@ -140,7 +140,11 @@ header{
     position: relative;
     top:2px;
 }
-.header-navbar{
+.header-navbar-queue{
+    display: none;
+}
+.header-navbar-stack{
+    display: none;
     background: #f2f2f2;
     border-bottom: 1px solid #000;
     width: 100%;
@@ -149,9 +153,8 @@ header{
     left: 0;
     right: 0;
     top:34px;
-    display: none;
 }
-#toggle:checked  ~ .header-navbar {
+#toggle:checked  ~.header-navbar-stack{
     display: block;
 }
 .header-nav-items{
@@ -186,7 +189,7 @@ header{
     max-width: 100%;
     width: 100%;
 }
-.nested-nav-item button{
+.nested-nav-item-button{
     height: 100%;
     width: 100%;
     max-width: 100%;
@@ -245,7 +248,6 @@ header{
     display: inline-block;
     vertical-align: baseline;
 }
-
 .sign-in-header-section .desktop-header-navbar .desktop-header-navbar-items {
     display: none;
 }
@@ -2104,6 +2106,7 @@ footer{
         font-size: 13px;
         padding-left: 24px;
         padding-right: 24px;
+        margin-bottom: 2px;
     }
     .header{
         margin: 0 auto;
@@ -2173,23 +2176,21 @@ footer{
         margin-top: -3px;
         white-space: nowrap;
     }
-    .header-navbar{
+    .header-navbar-queue{
         display: initial;
         overflow-x: auto;
-        overflow-y: visible;
-        overflow: hidden;
+        overflow-y: hidden;
         height: 100%;
+        float: left;
         white-space: nowrap;
         padding-left: 2px;
         padding-right: 1px;
         flex: 1 1 auto;
-        position: unset;
-        background: #fff;
-        border-bottom: unset;
-        min-width: unset;
-
+        background: #ffff;
+        width: 100%;
     }
     .header-nav-items{
+        height: unset;
         max-width: unset;
         overflow-x: visible;
     }
@@ -2201,6 +2202,7 @@ footer{
         text-align: left;
         border-top: unset;
         border-bottom: unset;
+        overflow-x: visible;
     }
     /* .ml-10{
         margin-left: -13.5px;
@@ -2220,20 +2222,32 @@ footer{
     .header-nav-items .header-nav-item:last-child{
         display: none;
     }
-    .nested-nav-item button{
+    .nested-nav-item{
+        width: unset;
+        height: unset;
+        max-width: unset;
+        display: inline-block;
+    }
+    .nested-nav-item-button{
+        display: inline-block;
+        position: relative;
+        z-index: 701;
         white-space: nowrap;
         color: #262626;
+        font-size: 13px;
         border: 1px solid transparent;
         margin-top: 1px;
-        padding: 16px 30px 16px 12px;
-        overflow: visible;
-        height: unset;
-        font-size: 13px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin-right: -10px;
+        padding: 16px 30px 16px 12px;
+        height: unset;
         width: unset;
         max-width: unset;
         appearance: button;
+        word-break: break-word;
+        outline-offset: -2px;
+    }
+    .header-navbar-queue .header-nav-item:nth-child(n+4):nth-child(-n+6) .nested-nav-item{
+        margin-left: -3.6px;
     }
     .nested-nav-item-button:after{
         font-size: 8px;
@@ -2242,12 +2256,10 @@ footer{
         display: inline-block;
         right: 15px;
     }
-    .header-navbar .header-nav-items .single-link-container:nth-child(1){
+    .single-link-container{
         overflow-x:visible;
         display: inline-block;
-    }
-    .header-navbar .header-nav-items .single-link-container{
-        display: none;
+        word-break: break-word;
     }
     .single-link{
         text-decoration: none;
@@ -2301,6 +2313,9 @@ footer{
         right: 0;
         left: -3px;
         top:0;
+        appearance: button;
+        font-size: 13px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .search-button:after{
         text-indent: 0;
@@ -2311,10 +2326,9 @@ footer{
     .search-text{
         display: none;
     }
-    .sign-in-header-section .desktop-header-navbar .desktop-header-navbar-items{
-        display: none;
+    .desktop-header-navbar-items .desktop-header-navbar-item:nth-child(n+1):nth-child(-n+4){
+        margin-right: -3.57px;
     }
-
     /* -------------- main-section ----------------- */
     .main-banner-image-container{
         height: 100%;
@@ -3432,7 +3446,6 @@ footer{
     }
 }
 
-
 @media screen and (min-width:1083px){
     .header-container{
         padding: 0 5%;
@@ -3465,42 +3478,44 @@ footer{
         box-sizing: content-box;
     }
     /* -----------header---------------- */
-    .header-navbar{
-        min-width: unset;
-    }
-    /* .header-nav-items .header-nav-item:last-child{
-        display: inline-block;
-    } */
-    /* .header-navbar .header-nav-items .header-nav-item:nth-child(n+1):nth-child(-n+6){
-        display: none;
-    } */
-    .header-navbar .header-nav-items .header-nav-item:nth-child(2) {
-        display: none;
-    }
-    .header-navbar .header-nav-items .header-nav-item:nth-child(3) {
-        display: none;
-    }
-    .header-navbar .header-nav-items .header-nav-item:nth-child(4) {
-        display: none;
-    }
-    .header-navbar .header-nav-items .header-nav-item:nth-child(5) {
-        display: none;
-    }
-    .header-navbar .header-nav-items .header-nav-item:nth-child(6) {
-        display: none;
-    }
-
     .header-nav-items .header-nav-item:last-child {
         display: inline-block;
     }
-    .sign-in-header-section .desktop-header-navbar .desktop-header-navbar-items {
+    /* .header-nav-items .header-nav-item:nth-child(n+3):nth-child(-n+6){
+        display: none;
+    } */
+    .header-nav-items .header-nav-item:nth-child(3){
+        display: none;
+    }
+    .header-nav-items .header-nav-item:nth-child(4){
+        display: none;
+    }
+    .header-nav-items .header-nav-item:nth-child(5){
+        display: none;
+    }
+    .header-nav-items .header-nav-item:nth-child(6){
+        display: none;
+    }
+    .sign-in-header-section .desktop-header-navbar .desktop-header-navbar-items{
         display: block;
         list-style: none;
+        overflow-x: visible;
         /* display: flex;
         align-items: flex-start; */
     }
+    .desktop-header-navbar-container{
+        overflow-x: visible;
+        text-align: left;
+    }
+    .desktop-header-navbar{
+        display: block;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
     .desktop-header-navbar-item{
-        display: inline-block;
+        display: inline-block !important;
+        overflow-x: visible;
+        word-break: break-word;
     }
     .navbar-item-link{
         text-decoration: none;
@@ -3510,6 +3525,11 @@ footer{
         padding: 16px 8px 10px;
         height: 48px;
         display: inline-block;
+        outline-offset: -2px;
+        overflow-x: visible;
+        white-space: normal;
+        position: relative;
+        word-break: break-word;
     }
     .navbar-item-button{
         text-decoration: none;
@@ -3528,6 +3548,9 @@ footer{
         white-space: normal;
         letter-spacing: normal;
         display: inline-block;
+        overflow-x: visible;
+        position: relative;
+        outline-offset: -2px;
     }
     .sign-in-header-section .desktop-header-navbar .desktop-header-navbar-item:last-child .navbar-item-button {
         border: 1px solid #000000;
@@ -3537,7 +3560,6 @@ footer{
     .slider{
         width: 758.15px;
     }
-    
     /* ------------------main-banner--------------- */
     .section-1 .main-banner-description{
         padding-right: 46px;
@@ -3658,8 +3680,25 @@ footer{
         margin: unset;
     }
 }
-@media screen and (min-width:1086px){
-    .header-navbar .header-nav-items .header-nav-item:nth-child(2) {
+
+@media screen and (min-width:1179px){
+    .azure-logo-name{
+        margin-left:32px ;
+    }
+    .header-nav-items .header-nav-item:nth-child(3){
+        display: inline-block;
+    }
+    .header-navbar-queue .header-nav-item:last-child .nested-nav-item {
+        margin-left: -3.6px;
+    }
+}
+@media screen and (min-width:1261px){
+    .header-nav-items .header-nav-item:nth-child(4){
+        display: inline-block;
+    }
+}
+@media screen and (min-width:1349px){
+    .header-nav-items .header-nav-item:nth-child(5){
         display: inline-block;
     }
 }
@@ -3692,22 +3731,6 @@ footer{
     }
 } */
 
-@media screen and (min-width:1183px){
-    .header-navbar .header-nav-items .header-nav-item:nth-child(3) {
-        display: inline-block;
-    }
-}
-@media screen and (min-width:1265px){
-    .header-navbar .header-nav-items .header-nav-item:nth-child(4) {
-        display: inline-block;
-    }
-}
-@media screen and (min-width:1353px){
-    .header-navbar .header-nav-items .header-nav-item:nth-child(5) {
-        display: inline-block;
-    }
-}
-
 @media screen and (min-width:1399px){
     .search-text{
         display: inline;
@@ -3718,6 +3741,17 @@ footer{
         letter-spacing: normal;
         overflow-x: visible;
     }
+    .sign-in-form{
+        width: 90px;
+    }
+    .search-button{
+        /* width: 77.7656px; */
+        margin-left: 1px;
+        left: unset;
+    }
+    .search-button::after{
+        margin-top: unset;
+    }
 }
 @media screen and (min-width:1400px){
     .section-2-content-container{
@@ -3726,36 +3760,12 @@ footer{
     .container{
         max-width: 1600px;
     }
-
-    .header-navbar .header-nav-items .header-nav-item:nth-child(6) {
-        display: inline-block;
-    }
-
-
     /* --------------------------- */
-    /* .search-text{
-        display: inline-block;
-    } */
-    .sign-in-form{
-        width: 90px;
-    }
-    .search-button{
-        width: 77.7656px;
-        margin-left: 1px;
-    }
-    .sign-in-header-section .nested-nav-item-button {
+    /* .sign-in-header-section .nested-nav-item-button {
         margin-right: unset;
     }
     .sign-in-header-section .nested-nav-item-button:after {
         right: 5px;
-    }
-
-
-
-
-    /* ---------------------------- */
-    /* .selected-indicator{
-        width: 4.36px;
     } */
 }
 @media screen and (min-width:1440px){
@@ -3765,6 +3775,12 @@ footer{
         width: 90%;
         box-sizing: content-box;
         max-width: 1328px;
+    }
+    .header-nav-items .header-nav-item:nth-child(6){
+        display: inline-block;
+    }
+    .header-nav-items .header-nav-item:last-child {
+        display: none;
     }
     /* ------------main-banner------------- */
     .main-banner-title h1{
@@ -3947,6 +3963,12 @@ footer{
     .social-media-container{
         padding:8px 12px;
         display: flex;
+    }
+    /* -------------ai-chat-button------------ */
+    .ai-chat-button-text{
+        font-size: 20px;
+        letter-spacing: -0.6px;
+        line-height: 32px;
     }
 }
 

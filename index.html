@@ -25,7 +25,7 @@
                     <label for="toggle" class="azure-button-mobile">
                         Azure 
                     </label>
-                    <nav class="header-navbar">
+                    <nav class="header-navbar-stack">
                         <ul class="header-nav-items">
                             <li class="header-nav-item">
                                 <a href="#">Home</a>
@@ -97,7 +97,8 @@
                         </span>
                     </a>
                 </div>
-                <nav class="header-navbar">
+                <!-- -------------------large-screen --------------- -->
+                <nav class="header-navbar-queue">
                     <ul class="header-nav-items">
                         <li class="single-link-container">
                             <a href="#" class="single-link">
@@ -112,34 +113,33 @@
                             </div>
                         </li>
                         <li class="header-nav-item">
-                            <div class="nested-nav-item">
+                            <div class="nested-nav-item" style="overflow-x: unset;">
                                 <button class="nested-nav-item-button">
                                     Solutions
                                 </button>
                             </div>
                         </li>
                         <li class="header-nav-item">
-                            <div class="nested-nav-item">
+                            <div class="nested-nav-item" style="overflow-x: unset;">
                                 <button class="nested-nav-item-button">
                                     Pricing
                                 </button>
                             </div>
                         </li>
                         <li class="header-nav-item">
-                            <div class="nested-nav-item">
+                            <div class="nested-nav-item" style="overflow-x: unset;">
                                 <button class="nested-nav-item-button">
                                     Partners
                                 </button>
                             </div>
                         </li>
                         <li class="header-nav-item">
-                            <div class="nested-nav-item">
+                            <div class="nested-nav-item" style="overflow-x: unset;">
                                 <button class="nested-nav-item-button">
                                     Resources
                                 </button>
                             </div>
                         </li>
-
                         <!-- <li class="single-link-container ">
                             <a href="#" class="single-link">
                                 Learn
@@ -161,9 +161,8 @@
                         <li class="desktop-header-navbar-item">
                             <a class="navbar-item-button" href="#">Sign in</a>
                         </li> -->
-
                         <li class="header-nav-item">
-                            <div class="nested-nav-item">
+                            <div class="nested-nav-item" style="overflow-x: unset;">
                                 <button class="nested-nav-item-button">
                                     More
                                 </button>
@@ -171,6 +170,7 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- -------------------large-screen --------------- -->
                 <div class="sign-in-header-section flex">
                     <!-- <nav class="desktop-header-navbar">
                         <ul class="desktop-header-navbar-items">
@@ -188,26 +188,28 @@
                             <span class="search-text">Search</span>
                         </button>
                     </form>
-                    <nav class="desktop-header-navbar">
-                        <ul class="desktop-header-navbar-items">
-                            <li class="desktop-header-navbar-item">
-                                <a class="navbar-item-link" href="#">Learn</a>
-                            </li>
-                            <li class="desktop-header-navbar-item">
-                                <a class="navbar-item-link" href="#">Support</a>
-                            </li>
-                            <li class="desktop-header-navbar-item">
-                                <a class="navbar-item-link" href="#">Contact Sales</a>
-                            </li>
-                            <li class="desktop-header-navbar-item">
-                                <a class="navbar-item-button" href="#">Get started with Azure</a>
-                            </li>
-                            <li class="desktop-header-navbar-item">
-                                <a class="navbar-item-button" href="#">Sign in</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                    <div class="desktop-header-navbar-container">
+                        <nav class="desktop-header-navbar">
+                            <ul class="desktop-header-navbar-items">
+                                <li class="desktop-header-navbar-item">
+                                    <a class="navbar-item-link" href="#">Learn</a>
+                                </li>
+                                <li class="desktop-header-navbar-item">
+                                    <a class="navbar-item-link" href="#">Support</a>
+                                </li>
+                                <li class="desktop-header-navbar-item">
+                                    <a class="navbar-item-link" href="#">Contact Sales</a>
+                                </li>
+                                <li class="desktop-header-navbar-item">
+                                    <a class="navbar-item-button" href="#">Get started with Azure</a>
+                                </li>
+                                <li class="desktop-header-navbar-item">
+                                    <a class="navbar-item-button" href="#">Sign in</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>  
             </div>
         </div>
     </header>
