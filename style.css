@@ -1469,8 +1469,6 @@ header{
     flex-wrap: wrap;
     white-space: normal;
 }
-
-
 .carousel-image-container{
     position: relative;
     padding: 8px 8px 0px;
@@ -1555,19 +1553,26 @@ header{
     letter-spacing: -0.03em;
     color: #0e1726;
 }
+
+
+
+
 .card-links{
     gap: 0.5rem;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    word-wrap: break-word;
+    overflow: break-word;
+    font-size: 16px;
+    font-weight:400 ;
+    letter-spacing: -0.48px;
+    line-height: 24px;
 }
 .card-links-list{
     gap: 0.75rem;
     list-style: none;
     flex-wrap: wrap;
     justify-content: flex-start;
-    flex-basis: auto;
-
     font-size: 16px;
     font-weight: 400;
     letter-spacing: -0.48px;
@@ -1578,17 +1583,22 @@ header{
     font-weight: 400;
     letter-spacing: -0.48px;
     line-height: 24px;
+    flex-basis: auto;
+    display: block;
 }
 .section-8 .card-links .card-link{
     gap: 0.5rem;
     align-items: center;
-    /* line-height: 24px; */
     padding-bottom: unset;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 24px;
 }
 .card-link-svg-icon{
     font-size: 16px;
     font-weight: 400;
-    height :25.6px;
+    height :26px;
     letter-spacing: -0.48px;
     line-height :24px;
 }
@@ -3341,6 +3351,7 @@ footer{
         letter-spacing: -0.48px;
     }
     .ai-icon{
+        margin-top: 2px;
         font-size: 1.5rem;
         max-height: 24px;
         height: 100%;
@@ -3354,6 +3365,7 @@ footer{
     }
     .ai-chat-button-text-container{
         margin-left: 12px;
+        margin-left: 11.5px;
         flex-direction: column;
         justify-content: center;
         text-align: start;
@@ -3440,7 +3452,7 @@ footer{
         display: none;
     }
 }
-@media screen and (min-width:1048px){
+@media screen and (min-width:1049px){
     .sticky-navbar-container-2{
         height: 56px;
     }
@@ -3611,6 +3623,9 @@ footer{
         background-position: center;
         background-size: cover;
     }
+    .section-5-content{
+        box-sizing: border-box;
+    }
     .gartner{
         box-sizing: border-box;
     }
@@ -3622,6 +3637,9 @@ footer{
         margin-top: unset;
     }
     /* ----------------section-8----------------- */
+    .section-8 .section-content{
+        box-sizing: border-box;
+    }
     .carousel-image-container{
         box-sizing: border-box;
     }
