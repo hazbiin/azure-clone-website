@@ -1598,7 +1598,8 @@ header{
 .card-link-svg-icon{
     font-size: 16px;
     font-weight: 400;
-    height :26px;
+    /* height :26px; */
+    height: 25.6px;
     letter-spacing: -0.48px;
     line-height :24px;
 }
@@ -2154,7 +2155,8 @@ footer{
         padding: 16px 6px 16px 10px;
         margin-top: 1px;
         margin-left: 18px;
-        display: inline-block;
+        /* display: inline-block; */
+        display: block;
         width: auto;
         height: 100%;
         white-space: nowrap;
@@ -2586,7 +2588,7 @@ footer{
         z-index: 500;
         height: 65px;
         align-self: flex-start;
-        box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+        /* box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14); */
     }
     .secondary-nav{
         /* height: 100%; */
@@ -3637,6 +3639,9 @@ footer{
         margin-top: unset;
     }
     /* ----------------section-8----------------- */
+    .section-8-content-container{
+
+    }
     .section-8 .section-content{
         box-sizing: border-box;
     }
@@ -3700,9 +3705,9 @@ footer{
 }
 
 @media screen and (min-width:1179px){
-    .azure-logo-name{
+    /* .azure-logo-name{
         margin-left:32px ;
-    }
+    } */
     .header-nav-items .header-nav-item:nth-child(3){
         display: inline-block;
     }
@@ -3787,6 +3792,7 @@ footer{
     } */
 }
 @media screen and (min-width:1440px){
+
     .container {
         padding-right: 5%;
         padding-left: 5%;
@@ -3883,7 +3889,7 @@ footer{
     } */
     .large-card-title{
         font-size: 32px;
-        letter-spacing: -0.6px;
+        letter-spacing: -1.6px;
         line-height: 40px;
     }
     /* --------------section-5--------------- */
@@ -3941,6 +3947,10 @@ footer{
         display: none;
     }
     /* ------------section-8----------------- */
+    .carousel{
+        /* height: 521.25px; */
+        /* height: 537.450px; */
+    }
     .carousel-description{
         font-size: 24px;
         line-height: 32px;
@@ -3988,7 +3998,26 @@ footer{
         letter-spacing: -0.6px;
         line-height: 32px;
     }
+    .ai-chat-button-text-container{
+        margin-left: 12px;
+    }
 }
+
+@media (min-width: 1441px) and (max-width: 1475px) {
+    .large-card-container{
+        /* height: 588.138px; */
+        max-height: 588.138px;
+    }
+}
+
+@media (min-width: 1475px){
+    .large-card-container{
+        /* height: 588.138px; */
+        height: 588.300px;
+        /* max-height: 588.138px; */
+    }
+}
+
 
 @media screen and (min-width:1541px){
 
@@ -4004,3 +4033,19 @@ footer{
         height: 316px;
     }
 }
+
+@media screen and (min-width:1779px){
+    .azure-logo-name{
+        margin-left: 32px;
+        padding-right: 10px;
+    }
+}
+
+
+/* @media (min-width: 1441px) and (max-width: 2560px) {
+    .carousel{
+        height: unset;
+        max-height: 550.638px;
+        height: 550.638px;
+    }
+} */
