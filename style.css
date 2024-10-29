@@ -3443,6 +3443,11 @@ footer{
     }
     
 }
+@media screen and (min-width: 1024px) {
+    .carousels-main-container{
+        margin-bottom: 150px;
+    }
+}
 @media screen and (min-width:1042px){
     .slider{
         width: unset;
